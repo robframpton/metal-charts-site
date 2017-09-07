@@ -12,18 +12,32 @@ weight: 2
 
 ## Example
 
-{call Chart.render}
+{call DonutChart.render}
 	{param columns: [
 		[
 			'id': 'data1',
-			'data': [10, 20, 30]
+			'data': [30]
 		],
 		[
 			'id': 'data2',
-			'data': [20, 30, 40]
+			'data': [70]
 		]
 	] /}
-	{param type: 'donut' /}
 {/call}
+
+```soy
+{call DonutChart.render}
+	{param columns: [
+		[
+			'id': 'data1',
+			'data': [30]
+		],
+		[
+			'id': 'data2',
+			'data': [70]
+		]
+	] /}
+{/call}
+```
 
 </article>
