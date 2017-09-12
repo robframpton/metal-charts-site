@@ -1,8 +1,7 @@
 ---
-title: "Step Chart"
-description: "Step Chart"
+title: "Bar Chart"
+description: "Bar Chart"
 layout: "guide"
-icon: "hammer"
 weight: 1
 ---
 
@@ -10,9 +9,7 @@ weight: 1
 
 <article id="1">
 
-## Example
-
-{call StepChart.render}
+{call BarChart.render}
 	{param columns: [
 		[
 			'id': 'data1',
@@ -26,7 +23,7 @@ weight: 1
 {/call}
 
 ```soy
-{call StepChart.render}
+{call BarChart.render}
 	{param columns: [
 		[
 			'id': 'data1',

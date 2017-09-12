@@ -2,15 +2,12 @@
 title: "Line Chart"
 description: "Line Chart"
 layout: "guide"
-icon: "hammer"
-weight: 1
+weight: 4
 ---
 
 ###### {$page.description}
 
 <article id="1">
-
-## Example
 
 {call LineChart.render}
 	{param columns: [

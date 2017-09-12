@@ -1,18 +1,15 @@
 ---
-title: "Spline Chart"
-description: "Spline Chart"
+title: "Step Chart"
+description: "Step Chart"
 layout: "guide"
-icon: "hammer"
-weight: 1
+weight: 8
 ---
 
 ###### {$page.description}
 
 <article id="1">
 
-## Example
-
-{call SplineChart.render}
+{call StepChart.render}
 	{param columns: [
 		[
 			'id': 'data1',
@@ -26,7 +23,7 @@ weight: 1
 {/call}
 
 ```soy
-{call SplineChart.render}
+{call StepChart.render}
 	{param columns: [
 		[
 			'id': 'data1',

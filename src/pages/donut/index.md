@@ -1,40 +1,37 @@
 ---
-title: "Scatter Chart"
-description: "Scatter Chart"
+title: "Donut Chart"
+description: "Donut Chart"
 layout: "guide"
-icon: "hammer"
-weight: 1
+weight: 2
 ---
 
 ###### {$page.description}
 
 <article id="1">
 
-## Example
-
-{call ScatterChart.render}
+{call DonutChart.render}
 	{param columns: [
 		[
 			'id': 'data1',
-			'data': [100, 20, 30]
+			'data': [30]
 		],
 		[
 			'id': 'data2',
-			'data': [20, 70, 100]
+			'data': [70]
 		]
 	] /}
 {/call}
 
 ```soy
-{call ScatterChart.render}
+{call DonutChart.render}
 	{param columns: [
 		[
 			'id': 'data1',
-			'data': [100, 20, 30]
+			'data': [30]
 		],
 		[
 			'id': 'data2',
-			'data': [20, 70, 100]
+			'data': [70]
 		]
 	] /}
 {/call}

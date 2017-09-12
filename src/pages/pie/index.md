@@ -1,40 +1,37 @@
 ---
-title: "Bar Chart"
-description: "Bar Chart"
+title: "Pie Chart"
+description: "Pie Chart"
 layout: "guide"
-icon: "hammer"
-weight: 1
+weight: 5
 ---
 
 ###### {$page.description}
 
 <article id="1">
 
-## Example
-
-{call BarChart.render}
+{call PieChart.render}
 	{param columns: [
 		[
 			'id': 'data1',
-			'data': [100, 20, 30]
+			'data': [30]
 		],
 		[
 			'id': 'data2',
-			'data': [20, 70, 100]
+			'data': [70]
 		]
 	] /}
 {/call}
 
 ```soy
-{call BarChart.render}
+{call PieChart.render}
 	{param columns: [
 		[
 			'id': 'data1',
-			'data': [100, 20, 30]
+			'data': [30]
 		],
 		[
 			'id': 'data2',
-			'data': [20, 70, 100]
+			'data': [70]
 		]
 	] /}
 {/call}

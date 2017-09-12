@@ -2,15 +2,12 @@
 title: "Gauge Chart"
 description: "Gauge Chart"
 layout: "guide"
-icon: "hammer"
-weight: 1
+weight: 3
 ---
 
 ###### {$page.description}
 
 <article id="1">
-
-## Example
 
 {call GaugeChart.render}
 	{param columns: [

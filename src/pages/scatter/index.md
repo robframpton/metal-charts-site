@@ -1,40 +1,37 @@
 ---
-title: "Pie Chart"
-description: "Pie Chart"
+title: "Scatter Chart"
+description: "Scatter Chart"
 layout: "guide"
-icon: "hammer"
-weight: 1
+weight: 6
 ---
 
 ###### {$page.description}
 
 <article id="1">
 
-## Example
-
-{call PieChart.render}
+{call ScatterChart.render}
 	{param columns: [
 		[
 			'id': 'data1',
-			'data': [30]
+			'data': [100, 20, 30]
 		],
 		[
 			'id': 'data2',
-			'data': [70]
+			'data': [20, 70, 100]
 		]
 	] /}
 {/call}
 
 ```soy
-{call PieChart.render}
+{call ScatterChart.render}
 	{param columns: [
 		[
 			'id': 'data1',
-			'data': [30]
+			'data': [100, 20, 30]
 		],
 		[
 			'id': 'data2',
-			'data': [70]
+			'data': [20, 70, 100]
 		]
 	] /}
 {/call}
