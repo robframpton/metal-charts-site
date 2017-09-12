@@ -12599,8 +12599,8 @@ function $logo(opt_data, opt_ignored, opt_ijData) {
           'class', 'topbar-logo-icon icon-16-graph');
       ie_open('span', null, null,
           'class', 'topbar-logo-text');
-        var dyn7 = opt_data.site.title;
-        if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
+        var dyn4 = opt_data.site.title;
+        if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
       ie_close('span');
     ie_close('a');
   ie_close('div');
@@ -47202,7 +47202,7 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param56 = function() {
+  var param95 = function() {
     $templateAlias2({section: opt_data.site.index}, null, opt_ijData);
     ie_open('div', null, null,
         'class', 'sidebar-offset');
@@ -47222,8 +47222,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
             ie_open('p', null, null,
                 'class', 'docs-home-top-description');
               itext('Start learning how to leverage the power of ');
-              var dyn5 = opt_data.site.title;
-              if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
+              var dyn7 = opt_data.site.title;
+              if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
               itext('.');
             ie_close('p');
           ie_close('div');
@@ -47238,7 +47238,7 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       ie_close('div');
     ie_close('div');
   };
-  $templateAlias1(soy.$$assignDefaults({elementClasses: 'docs', content: param56}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({elementClasses: 'docs', content: param95}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {

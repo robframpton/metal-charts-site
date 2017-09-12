@@ -12599,8 +12599,8 @@ function $logo(opt_data, opt_ignored, opt_ijData) {
           'class', 'topbar-logo-icon icon-16-graph');
       ie_open('span', null, null,
           'class', 'topbar-logo-text');
-        var dyn7 = opt_data.site.title;
-        if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
+        var dyn4 = opt_data.site.title;
+        if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
       ie_close('span');
     ie_close('a');
   ie_close('div');
@@ -47147,7 +47147,7 @@ module.exports = Uri;
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fyOvy", function() { return fyOvy; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NyHLv", function() { return NyHLv; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -47163,11 +47163,11 @@ goog.loadModule(function(exports) {
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace fyOvy.
+ * @fileoverview Templates in namespace NyHLv.
  * @public
  */
 
-goog.module('fyOvy.incrementaldom');
+goog.module('NyHLv.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -47228,7 +47228,7 @@ function $render(opt_data, opt_ignored, opt_ijData) {
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'fyOvy.render';
+  $render.soyTemplateName = 'NyHLv.render';
 }
 
 exports.render.params = ["page","site"];
@@ -47238,8 +47238,8 @@ return exports;
 
 });
 
-class fyOvy extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(fyOvy, templates);
+class NyHLv extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(NyHLv, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
@@ -47298,23 +47298,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var fyOvy = function (_Component) {
-  _inherits(fyOvy, _Component);
+var NyHLv = function (_Component) {
+  _inherits(NyHLv, _Component);
 
-  function fyOvy() {
-    _classCallCheck(this, fyOvy);
+  function NyHLv() {
+    _classCallCheck(this, NyHLv);
 
-    return _possibleConstructorReturn(this, (fyOvy.__proto__ || Object.getPrototypeOf(fyOvy)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (NyHLv.__proto__ || Object.getPrototypeOf(NyHLv)).apply(this, arguments));
   }
 
-  return fyOvy;
+  return NyHLv;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(fyOvy, _indexSoy2.default);
+_metalSoy2.default.register(NyHLv, _indexSoy2.default);
 
-exports.default = fyOvy;
+exports.default = NyHLv;
 
 /***/ })
 ],[596]);

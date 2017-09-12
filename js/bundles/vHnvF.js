@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([7],[
+webpackJsonppageComponent([9],[
 /* 0 */,
 /* 1 */,
 /* 2 */
@@ -12599,8 +12599,8 @@ function $logo(opt_data, opt_ignored, opt_ijData) {
           'class', 'topbar-logo-icon icon-16-graph');
       ie_open('span', null, null,
           'class', 'topbar-logo-text');
-        var dyn7 = opt_data.site.title;
-        if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
+        var dyn4 = opt_data.site.title;
+        if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
       ie_close('span');
     ie_close('a');
   ie_close('div');
@@ -47134,14 +47134,12 @@ module.exports = Uri;
 /* 574 */,
 /* 575 */,
 /* 576 */,
-/* 577 */,
-/* 578 */,
-/* 579 */
+/* 577 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RkGcz", function() { return RkGcz; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "vHnvF", function() { return vHnvF; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -47157,11 +47155,11 @@ goog.loadModule(function(exports) {
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace RkGcz.
+ * @fileoverview Templates in namespace vHnvF.
  * @public
  */
 
-goog.module('RkGcz.incrementaldom');
+goog.module('vHnvF.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -47182,9 +47180,9 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias3 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
+var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('Chart.incrementaldom', 'render');
 
-var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('GaugeChart.incrementaldom', 'render');
+var $templateAlias3 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
 
 var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
 
@@ -47197,17 +47195,17 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param167 = function() {
+  var param109 = function() {
     ie_open('h6');
-      var dyn11 = opt_data.page.description;
-      if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
+      var dyn8 = opt_data.page.description;
+      if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
     ie_close('h6');
     ie_open('article', null, null,
         'id', '1');
       ie_open('p');
-        $templateAlias2({columns: [{id: 'data1', data: [87.4]}]}, null, opt_ijData);
+        $templateAlias2({columns: [{id: 'data1', data: [30, 20, 50, 40, 60, 50], type: 'bar'}, {id: 'data2', data: [200, 130, 90, 240, 130, 220], type: 'bar'}, {id: 'data3', data: [300, 200, 160, 400, 250, 250], type: 'spline'}, {id: 'data4', data: [200, 130, 90, 240, 130, 220], type: 'line'}, {id: 'data5', data: [130, 120, 150, 140, 160, 150], type: 'bar'}, {id: 'data6', data: [90, 70, 20, 50, 60, 120], type: 'area'}], groups: [['data1', 'data2']]}, null, opt_ijData);
       ie_close('p');
-      $templateAlias3({code: '{call GaugeChart.render}\n    {param columns: [\n        [\n            \'id\': \'data1\',\n            \'data\': [87.4]\n        ]\n    ] /}\n{/call}', mode: 'soy'}, null, opt_ijData);
+      $templateAlias3({code: '{call Chart.render}\n    {param columns: [\n        [\n            \'id\': \'data1\',\n            \'data\': [30, 20, 50, 40, 60, 50],\n            \'type\': \'bar\'\n        ],\n        [\n            \'id\': \'data2\',\n            \'data\': [200, 130, 90, 240, 130, 220],\n            \'type\': \'bar\'\n        ],\n        [\n            \'id\': \'data3\',\n            \'data\': [300, 200, 160, 400, 250, 250],\n            \'type\': \'spline\'\n        ],\n        [\n            \'id\': \'data4\',\n            \'data\': [200, 130, 90, 240, 130, 220],\n            \'type\': \'line\'\n        ],\n        [\n            \'id\': \'data5\',\n            \'data\': [130, 120, 150, 140, 160, 150],\n            \'type\': \'bar\'\n        ],\n        [\n            \'id\': \'data6\',\n            \'data\': [90, 70, 20, 50, 60, 120],\n            \'type\': \'area\'\n        ]\n    ] /}\n    {param groups: [[\'data1\', \'data2\']] /}\n{/call}', mode: 'soy'}, null, opt_ijData);
     ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
@@ -47218,11 +47216,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param167}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param109}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'RkGcz.render';
+  $render.soyTemplateName = 'vHnvF.render';
 }
 
 exports.render.params = ["page","site"];
@@ -47232,14 +47230,16 @@ return exports;
 
 });
 
-class RkGcz extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(RkGcz, templates);
+class vHnvF extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(vHnvF, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 578 */,
+/* 579 */,
 /* 580 */,
 /* 581 */,
 /* 582 */,
@@ -47248,9 +47248,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(RkGcz, templates);
 /* 585 */,
 /* 586 */,
 /* 587 */,
-/* 588 */,
-/* 589 */,
-/* 590 */
+/* 588 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -47280,7 +47278,7 @@ __webpack_require__(192);
 
 __webpack_require__(189);
 
-var _indexSoy = __webpack_require__(579);
+var _indexSoy = __webpack_require__(577);
 
 var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
@@ -47292,23 +47290,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var RkGcz = function (_Component) {
-  _inherits(RkGcz, _Component);
+var vHnvF = function (_Component) {
+  _inherits(vHnvF, _Component);
 
-  function RkGcz() {
-    _classCallCheck(this, RkGcz);
+  function vHnvF() {
+    _classCallCheck(this, vHnvF);
 
-    return _possibleConstructorReturn(this, (RkGcz.__proto__ || Object.getPrototypeOf(RkGcz)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (vHnvF.__proto__ || Object.getPrototypeOf(vHnvF)).apply(this, arguments));
   }
 
-  return RkGcz;
+  return vHnvF;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(RkGcz, _indexSoy2.default);
+_metalSoy2.default.register(vHnvF, _indexSoy2.default);
 
-exports.default = RkGcz;
+exports.default = vHnvF;
 
 /***/ })
-],[590]);
+],[588]);
