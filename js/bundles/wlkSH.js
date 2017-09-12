@@ -12599,8 +12599,8 @@ function $logo(opt_data, opt_ignored, opt_ijData) {
           'class', 'topbar-logo-icon icon-16-graph');
       ie_open('span', null, null,
           'class', 'topbar-logo-text');
-        var dyn7 = opt_data.site.title;
-        if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
+        var dyn4 = opt_data.site.title;
+        if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
       ie_close('span');
     ie_close('a');
   ie_close('div');
@@ -47144,7 +47144,7 @@ module.exports = Uri;
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isHTD", function() { return isHTD; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "wlkSH", function() { return wlkSH; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -47160,11 +47160,11 @@ goog.loadModule(function(exports) {
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace isHTD.
+ * @fileoverview Templates in namespace wlkSH.
  * @public
  */
 
-goog.module('isHTD.incrementaldom');
+goog.module('wlkSH.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -47225,7 +47225,7 @@ function $render(opt_data, opt_ignored, opt_ijData) {
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'isHTD.render';
+  $render.soyTemplateName = 'wlkSH.render';
 }
 
 exports.render.params = ["page","site"];
@@ -47235,8 +47235,8 @@ return exports;
 
 });
 
-class isHTD extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(isHTD, templates);
+class wlkSH extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(wlkSH, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
@@ -47296,23 +47296,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var isHTD = function (_Component) {
-  _inherits(isHTD, _Component);
+var wlkSH = function (_Component) {
+  _inherits(wlkSH, _Component);
 
-  function isHTD() {
-    _classCallCheck(this, isHTD);
+  function wlkSH() {
+    _classCallCheck(this, wlkSH);
 
-    return _possibleConstructorReturn(this, (isHTD.__proto__ || Object.getPrototypeOf(isHTD)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (wlkSH.__proto__ || Object.getPrototypeOf(wlkSH)).apply(this, arguments));
   }
 
-  return isHTD;
+  return wlkSH;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(isHTD, _indexSoy2.default);
+_metalSoy2.default.register(wlkSH, _indexSoy2.default);
 
-exports.default = isHTD;
+exports.default = wlkSH;
 
 /***/ })
 ],[594]);

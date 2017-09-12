@@ -12599,8 +12599,8 @@ function $logo(opt_data, opt_ignored, opt_ijData) {
           'class', 'topbar-logo-icon icon-16-graph');
       ie_open('span', null, null,
           'class', 'topbar-logo-text');
-        var dyn7 = opt_data.site.title;
-        if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
+        var dyn4 = opt_data.site.title;
+        if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
       ie_close('span');
     ie_close('a');
   ie_close('div');
@@ -47138,7 +47138,7 @@ module.exports = Uri;
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FVrhK", function() { return FVrhK; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "xwYrd", function() { return xwYrd; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -47154,11 +47154,11 @@ goog.loadModule(function(exports) {
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace FVrhK.
+ * @fileoverview Templates in namespace xwYrd.
  * @public
  */
 
-goog.module('FVrhK.incrementaldom');
+goog.module('xwYrd.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -47194,10 +47194,10 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param148 = function() {
+  var param109 = function() {
     ie_open('h6');
-      var dyn10 = opt_data.page.description;
-      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
+      var dyn8 = opt_data.page.description;
+      if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
     ie_close('h6');
     ie_open('article', null, null,
         'id', '1');
@@ -47215,11 +47215,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param148}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param109}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'FVrhK.render';
+  $render.soyTemplateName = 'xwYrd.render';
 }
 
 exports.render.params = ["page","site"];
@@ -47229,8 +47229,8 @@ return exports;
 
 });
 
-class FVrhK extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(FVrhK, templates);
+class xwYrd extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(xwYrd, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
@@ -47289,23 +47289,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var FVrhK = function (_Component) {
-  _inherits(FVrhK, _Component);
+var xwYrd = function (_Component) {
+  _inherits(xwYrd, _Component);
 
-  function FVrhK() {
-    _classCallCheck(this, FVrhK);
+  function xwYrd() {
+    _classCallCheck(this, xwYrd);
 
-    return _possibleConstructorReturn(this, (FVrhK.__proto__ || Object.getPrototypeOf(FVrhK)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (xwYrd.__proto__ || Object.getPrototypeOf(xwYrd)).apply(this, arguments));
   }
 
-  return FVrhK;
+  return xwYrd;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(FVrhK, _indexSoy2.default);
+_metalSoy2.default.register(xwYrd, _indexSoy2.default);
 
-exports.default = FVrhK;
+exports.default = xwYrd;
 
 /***/ })
 ],[587]);

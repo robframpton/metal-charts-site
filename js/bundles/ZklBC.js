@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([9],[
+webpackJsonppageComponent([1],[
 /* 0 */,
 /* 1 */,
 /* 2 */
@@ -12599,8 +12599,8 @@ function $logo(opt_data, opt_ignored, opt_ijData) {
           'class', 'topbar-logo-icon icon-16-graph');
       ie_open('span', null, null,
           'class', 'topbar-logo-text');
-        var dyn7 = opt_data.site.title;
-        if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
+        var dyn4 = opt_data.site.title;
+        if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
       ie_close('span');
     ie_close('a');
   ie_close('div');
@@ -47134,12 +47134,20 @@ module.exports = Uri;
 /* 574 */,
 /* 575 */,
 /* 576 */,
-/* 577 */
+/* 577 */,
+/* 578 */,
+/* 579 */,
+/* 580 */,
+/* 581 */,
+/* 582 */,
+/* 583 */,
+/* 584 */,
+/* 585 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HWBmR", function() { return HWBmR; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ZklBC", function() { return ZklBC; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -47155,11 +47163,11 @@ goog.loadModule(function(exports) {
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace HWBmR.
+ * @fileoverview Templates in namespace ZklBC.
  * @public
  */
 
-goog.module('HWBmR.incrementaldom');
+goog.module('ZklBC.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -47180,9 +47188,9 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('Chart.incrementaldom', 'render');
-
 var $templateAlias3 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
+
+var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('SplineChart.incrementaldom', 'render');
 
 var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
 
@@ -47195,17 +47203,17 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param128 = function() {
+  var param243 = function() {
     ie_open('h6');
-      var dyn9 = opt_data.page.description;
-      if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
+      var dyn15 = opt_data.page.description;
+      if (typeof dyn15 == 'function') dyn15(); else if (dyn15 != null) itext(dyn15);
     ie_close('h6');
     ie_open('article', null, null,
         'id', '1');
       ie_open('p');
-        $templateAlias2({columns: [{id: 'data1', data: [30, 20, 50, 40, 60, 50], type: 'bar'}, {id: 'data2', data: [200, 130, 90, 240, 130, 220], type: 'bar'}, {id: 'data3', data: [300, 200, 160, 400, 250, 250], type: 'spline'}, {id: 'data4', data: [200, 130, 90, 240, 130, 220], type: 'line'}, {id: 'data5', data: [130, 120, 150, 140, 160, 150], type: 'bar'}, {id: 'data6', data: [90, 70, 20, 50, 60, 120], type: 'area'}], groups: [['data1', 'data2']]}, null, opt_ijData);
+        $templateAlias2({columns: [{id: 'data1', data: [100, 20, 30]}, {id: 'data2', data: [20, 70, 100]}]}, null, opt_ijData);
       ie_close('p');
-      $templateAlias3({code: '{call Chart.render}\n    {param columns: [\n        [\n            \'id\': \'data1\',\n            \'data\': [30, 20, 50, 40, 60, 50],\n            \'type\': \'bar\'\n        ],\n        [\n            \'id\': \'data2\',\n            \'data\': [200, 130, 90, 240, 130, 220],\n            \'type\': \'bar\'\n        ],\n        [\n            \'id\': \'data3\',\n            \'data\': [300, 200, 160, 400, 250, 250],\n            \'type\': \'spline\'\n        ],\n        [\n            \'id\': \'data4\',\n            \'data\': [200, 130, 90, 240, 130, 220],\n            \'type\': \'line\'\n        ],\n        [\n            \'id\': \'data5\',\n            \'data\': [130, 120, 150, 140, 160, 150],\n            \'type\': \'bar\'\n        ],\n        [\n            \'id\': \'data6\',\n            \'data\': [90, 70, 20, 50, 60, 120],\n            \'type\': \'area\'\n        ]\n    ] /}\n    {param groups: [[\'data1\', \'data2\']] /}\n{/call}', mode: 'soy'}, null, opt_ijData);
+      $templateAlias3({code: '{call SplineChart.render}\n    {param columns: [\n        [\n            \'id\': \'data1\',\n            \'data\': [100, 20, 30]\n        ],\n        [\n            \'id\': \'data2\',\n            \'data\': [20, 70, 100]\n        ]\n    ] /}\n{/call}', mode: 'soy'}, null, opt_ijData);
     ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
@@ -47216,11 +47224,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param128}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param243}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'HWBmR.render';
+  $render.soyTemplateName = 'ZklBC.render';
 }
 
 exports.render.params = ["page","site"];
@@ -47230,25 +47238,25 @@ return exports;
 
 });
 
-class HWBmR extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(HWBmR, templates);
+class ZklBC extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(ZklBC, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 578 */,
-/* 579 */,
-/* 580 */,
-/* 581 */,
-/* 582 */,
-/* 583 */,
-/* 584 */,
-/* 585 */,
 /* 586 */,
 /* 587 */,
-/* 588 */
+/* 588 */,
+/* 589 */,
+/* 590 */,
+/* 591 */,
+/* 592 */,
+/* 593 */,
+/* 594 */,
+/* 595 */,
+/* 596 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -47278,7 +47286,7 @@ __webpack_require__(192);
 
 __webpack_require__(189);
 
-var _indexSoy = __webpack_require__(577);
+var _indexSoy = __webpack_require__(585);
 
 var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
@@ -47290,23 +47298,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var HWBmR = function (_Component) {
-  _inherits(HWBmR, _Component);
+var ZklBC = function (_Component) {
+  _inherits(ZklBC, _Component);
 
-  function HWBmR() {
-    _classCallCheck(this, HWBmR);
+  function ZklBC() {
+    _classCallCheck(this, ZklBC);
 
-    return _possibleConstructorReturn(this, (HWBmR.__proto__ || Object.getPrototypeOf(HWBmR)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (ZklBC.__proto__ || Object.getPrototypeOf(ZklBC)).apply(this, arguments));
   }
 
-  return HWBmR;
+  return ZklBC;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(HWBmR, _indexSoy2.default);
+_metalSoy2.default.register(ZklBC, _indexSoy2.default);
 
-exports.default = HWBmR;
+exports.default = ZklBC;
 
 /***/ })
-],[588]);
+],[596]);
