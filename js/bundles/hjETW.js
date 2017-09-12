@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([0],[
+webpackJsonppageComponent([7],[
 /* 0 */,
 /* 1 */,
 /* 2 */
@@ -12599,8 +12599,8 @@ function $logo(opt_data, opt_ignored, opt_ijData) {
           'class', 'topbar-logo-icon icon-16-graph');
       ie_open('span', null, null,
           'class', 'topbar-logo-text');
-        var dyn4 = opt_data.site.title;
-        if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
+        var dyn7 = opt_data.site.title;
+        if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
       ie_close('span');
     ie_close('a');
   ie_close('div');
@@ -47136,19 +47136,12 @@ module.exports = Uri;
 /* 576 */,
 /* 577 */,
 /* 578 */,
-/* 579 */,
-/* 580 */,
-/* 581 */,
-/* 582 */,
-/* 583 */,
-/* 584 */,
-/* 585 */,
-/* 586 */
+/* 579 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "kwuJq", function() { return kwuJq; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "hjETW", function() { return hjETW; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -47164,11 +47157,11 @@ goog.loadModule(function(exports) {
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace kwuJq.
+ * @fileoverview Templates in namespace hjETW.
  * @public
  */
 
-goog.module('kwuJq.incrementaldom');
+goog.module('hjETW.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -47191,7 +47184,7 @@ var iattr = IncrementalDom.attr;
 
 var $templateAlias3 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
 
-var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('StepChart.incrementaldom', 'render');
+var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('GaugeChart.incrementaldom', 'render');
 
 var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
 
@@ -47204,17 +47197,17 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param262 = function() {
+  var param167 = function() {
     ie_open('h6');
-      var dyn16 = opt_data.page.description;
-      if (typeof dyn16 == 'function') dyn16(); else if (dyn16 != null) itext(dyn16);
+      var dyn11 = opt_data.page.description;
+      if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
     ie_close('h6');
     ie_open('article', null, null,
         'id', '1');
       ie_open('p');
-        $templateAlias2({columns: [{id: 'data1', data: [100, 20, 30]}, {id: 'data2', data: [20, 70, 100]}]}, null, opt_ijData);
+        $templateAlias2({columns: [{id: 'data1', data: [87.4]}]}, null, opt_ijData);
       ie_close('p');
-      $templateAlias3({code: '{call StepChart.render}\n    {param columns: [\n        [\n            \'id\': \'data1\',\n            \'data\': [100, 20, 30]\n        ],\n        [\n            \'id\': \'data2\',\n            \'data\': [20, 70, 100]\n        ]\n    ] /}\n{/call}', mode: 'soy'}, null, opt_ijData);
+      $templateAlias3({code: '{call GaugeChart.render}\n    {param columns: [\n        [\n            \'id\': \'data1\',\n            \'data\': [87.4]\n        ]\n    ] /}\n{/call}', mode: 'soy'}, null, opt_ijData);
     ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
@@ -47225,11 +47218,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param262}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param167}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'kwuJq.render';
+  $render.soyTemplateName = 'hjETW.render';
 }
 
 exports.render.params = ["page","site"];
@@ -47239,25 +47232,25 @@ return exports;
 
 });
 
-class kwuJq extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(kwuJq, templates);
+class hjETW extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(hjETW, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 580 */,
+/* 581 */,
+/* 582 */,
+/* 583 */,
+/* 584 */,
+/* 585 */,
+/* 586 */,
 /* 587 */,
 /* 588 */,
 /* 589 */,
-/* 590 */,
-/* 591 */,
-/* 592 */,
-/* 593 */,
-/* 594 */,
-/* 595 */,
-/* 596 */,
-/* 597 */
+/* 590 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -47287,7 +47280,7 @@ __webpack_require__(192);
 
 __webpack_require__(189);
 
-var _indexSoy = __webpack_require__(586);
+var _indexSoy = __webpack_require__(579);
 
 var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
@@ -47299,23 +47292,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var kwuJq = function (_Component) {
-  _inherits(kwuJq, _Component);
+var hjETW = function (_Component) {
+  _inherits(hjETW, _Component);
 
-  function kwuJq() {
-    _classCallCheck(this, kwuJq);
+  function hjETW() {
+    _classCallCheck(this, hjETW);
 
-    return _possibleConstructorReturn(this, (kwuJq.__proto__ || Object.getPrototypeOf(kwuJq)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (hjETW.__proto__ || Object.getPrototypeOf(hjETW)).apply(this, arguments));
   }
 
-  return kwuJq;
+  return hjETW;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(kwuJq, _indexSoy2.default);
+_metalSoy2.default.register(hjETW, _indexSoy2.default);
 
-exports.default = kwuJq;
+exports.default = hjETW;
 
 /***/ })
-],[597]);
+],[590]);

@@ -12599,8 +12599,8 @@ function $logo(opt_data, opt_ignored, opt_ijData) {
           'class', 'topbar-logo-icon icon-16-graph');
       ie_open('span', null, null,
           'class', 'topbar-logo-text');
-        var dyn4 = opt_data.site.title;
-        if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
+        var dyn7 = opt_data.site.title;
+        if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
       ie_close('span');
     ie_close('a');
   ie_close('div');
@@ -47143,7 +47143,7 @@ module.exports = Uri;
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "skmJq", function() { return skmJq; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "qmIZn", function() { return qmIZn; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -47159,11 +47159,11 @@ goog.loadModule(function(exports) {
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace skmJq.
+ * @fileoverview Templates in namespace qmIZn.
  * @public
  */
 
-goog.module('skmJq.incrementaldom');
+goog.module('qmIZn.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -47224,7 +47224,7 @@ function $render(opt_data, opt_ignored, opt_ijData) {
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'skmJq.render';
+  $render.soyTemplateName = 'qmIZn.render';
 }
 
 exports.render.params = ["page","site"];
@@ -47234,8 +47234,8 @@ return exports;
 
 });
 
-class skmJq extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(skmJq, templates);
+class qmIZn extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(qmIZn, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
@@ -47293,23 +47293,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var skmJq = function (_Component) {
-  _inherits(skmJq, _Component);
+var qmIZn = function (_Component) {
+  _inherits(qmIZn, _Component);
 
-  function skmJq() {
-    _classCallCheck(this, skmJq);
+  function qmIZn() {
+    _classCallCheck(this, qmIZn);
 
-    return _possibleConstructorReturn(this, (skmJq.__proto__ || Object.getPrototypeOf(skmJq)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (qmIZn.__proto__ || Object.getPrototypeOf(qmIZn)).apply(this, arguments));
   }
 
-  return skmJq;
+  return qmIZn;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(skmJq, _indexSoy2.default);
+_metalSoy2.default.register(qmIZn, _indexSoy2.default);
 
-exports.default = skmJq;
+exports.default = qmIZn;
 
 /***/ })
 ],[591]);
