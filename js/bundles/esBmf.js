@@ -12599,8 +12599,8 @@ function $logo(opt_data, opt_ignored, opt_ijData) {
           'class', 'topbar-logo-icon icon-16-graph');
       ie_open('span', null, null,
           'class', 'topbar-logo-text');
-        var dyn4 = opt_data.site.title;
-        if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
+        var dyn7 = opt_data.site.title;
+        if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
       ie_close('span');
     ie_close('a');
   ie_close('div');
@@ -47140,7 +47140,7 @@ module.exports = Uri;
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "tVlii", function() { return tVlii; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "esBmf", function() { return esBmf; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -47156,11 +47156,11 @@ goog.loadModule(function(exports) {
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace tVlii.
+ * @fileoverview Templates in namespace esBmf.
  * @public
  */
 
-goog.module('tVlii.incrementaldom');
+goog.module('esBmf.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -47196,7 +47196,7 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param148 = function() {
+  var param156 = function() {
     ie_open('h6');
       var dyn10 = opt_data.page.description;
       if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
@@ -47207,6 +47207,7 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         $templateAlias2({columns: [{id: 'data1', data: [30]}, {id: 'data2', data: [70]}]}, null, opt_ijData);
       ie_close('p');
       $templateAlias3({code: '{call DonutChart.render}\n    {param columns: [\n        [\n            \'id\': \'data1\',\n            \'data\': [30]\n        ],\n        [\n            \'id\': \'data2\',\n            \'data\': [70]\n        ]\n    ] /}\n{/call}', mode: 'soy'}, null, opt_ijData);
+      $templateAlias3({code: '<DonutChart\n    columns={[\n        {\n            id: \'data1\',\n            data: [30]\n        },\n        {\n            id: \'data2\',\n            data: [70]\n        }\n    ]}\n/>', mode: 'jsx'}, null, opt_ijData);
     ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
@@ -47217,11 +47218,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param148}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param156}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'tVlii.render';
+  $render.soyTemplateName = 'esBmf.render';
 }
 
 exports.render.params = ["page","site"];
@@ -47231,8 +47232,8 @@ return exports;
 
 });
 
-class tVlii extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(tVlii, templates);
+class esBmf extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(esBmf, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
@@ -47291,23 +47292,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var tVlii = function (_Component) {
-  _inherits(tVlii, _Component);
+var esBmf = function (_Component) {
+  _inherits(esBmf, _Component);
 
-  function tVlii() {
-    _classCallCheck(this, tVlii);
+  function esBmf() {
+    _classCallCheck(this, esBmf);
 
-    return _possibleConstructorReturn(this, (tVlii.__proto__ || Object.getPrototypeOf(tVlii)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (esBmf.__proto__ || Object.getPrototypeOf(esBmf)).apply(this, arguments));
   }
 
-  return tVlii;
+  return esBmf;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(tVlii, _indexSoy2.default);
+_metalSoy2.default.register(esBmf, _indexSoy2.default);
 
-exports.default = tVlii;
+exports.default = esBmf;
 
 /***/ })
 ],[589]);

@@ -12599,8 +12599,8 @@ function $logo(opt_data, opt_ignored, opt_ijData) {
           'class', 'topbar-logo-icon icon-16-graph');
       ie_open('span', null, null,
           'class', 'topbar-logo-text');
-        var dyn4 = opt_data.site.title;
-        if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
+        var dyn7 = opt_data.site.title;
+        if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
       ie_close('span');
     ie_close('a');
   ie_close('div');
@@ -47235,8 +47235,8 @@ function $topics(opt_data, opt_ignored, opt_ijData) {
             'class', 'col-xs-16');
           ie_open('h1', null, null,
               'class', 'docs-home-top-title');
-            var dyn5 = opt_data.page.title;
-            if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
+            var dyn3 = opt_data.page.title;
+            if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
           ie_close('h1');
         ie_close('div');
       ie_close('div');
@@ -47285,17 +47285,17 @@ function $topics(opt_data, opt_ignored, opt_ijData) {
               'class', 'col-md-12 col-md-offset-2 col-xs-16');
             ie_open('div', null, null,
                 'class', 'row');
-              var childIdList89 = opt_data.page.childIds;
-              var childIdListLen89 = childIdList89.length;
-              for (var childIdIndex89 = 0; childIdIndex89 < childIdListLen89; childIdIndex89++) {
-                var childIdData89 = childIdList89[childIdIndex89];
-                var topic__soy81 = opt_data.page.children[childIdData89];
-                if (! topic__soy81.hidden) {
+              var childIdList50 = opt_data.page.childIds;
+              var childIdListLen50 = childIdList50.length;
+              for (var childIdIndex50 = 0; childIdIndex50 < childIdListLen50; childIdIndex50++) {
+                var childIdData50 = childIdList50[childIdIndex50];
+                var topic__soy42 = opt_data.page.children[childIdData50];
+                if (! topic__soy42.hidden) {
                   ie_open('div', null, null,
                       'class', 'col-md-8 col-md-offset-0 col-xs-14 col-xs-offset-1');
                     ie_open('a', null, null,
                         'class', 'topic radial-out',
-                        'href', topic__soy81.url);
+                        'href', topic__soy42.url);
                       ie_open('div', null, null,
                           'class', 'topic-icon');
                         ie_void('span', null, null,
@@ -47303,8 +47303,8 @@ function $topics(opt_data, opt_ignored, opt_ijData) {
                       ie_close('div');
                       ie_open('h3', null, null,
                           'class', 'topic-title');
-                        var dyn6 = topic__soy81.title;
-                        if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
+                        var dyn4 = topic__soy42.title;
+                        if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
                       ie_close('h3');
                     ie_close('a');
                   ie_close('div');
