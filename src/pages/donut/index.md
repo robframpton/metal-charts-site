@@ -36,5 +36,19 @@ weight: 2
 	] /}
 {/call}
 ```
+```jsx
+<DonutChart
+	columns={[
+		{
+			id: 'data1',
+			data: [30]
+		},
+		{
+			id: 'data2',
+			data: [70]
+		}
+	]}
+/>
+```
 
 </article>

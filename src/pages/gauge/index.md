@@ -28,5 +28,15 @@ weight: 3
 	] /}
 {/call}
 ```
+```jsx
+<GaugeChart
+	columns={[
+		{
+			id: 'data1',
+			data: [87.4]
+		}
+	]}
+/>
+```
 
 </article>

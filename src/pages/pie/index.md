@@ -36,5 +36,19 @@ weight: 5
 	] /}
 {/call}
 ```
+```jsx
+<PieChart
+	columns={[
+		{
+			id: 'data1',
+			data: [30]
+		},
+		{
+			id: 'data2',
+			data: [70]
+		}
+	]}
+/>
+```
 
 </article>

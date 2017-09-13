@@ -10,6 +10,6 @@ module.exports = {
 	sassOptions: {
 		includePaths: ['node_modules', marble.src]
 	},
-	codeMirrorLanguages: ['soy', 'xml'],
+	codeMirrorLanguages: ['javascript', 'jsx', 'soy', 'xml'],
 	vendorSrc: ['node_modules/marble/build/fonts/**', path.join(billboardDistPath, 'billboard.css')]
 };
