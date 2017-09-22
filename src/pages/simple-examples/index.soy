@@ -3,7 +3,6 @@ title: "Simple Examples"
 description: "Simple Examples"
 ---
 
-
 {namespace simpleExamplesIndex}
 
 /**
@@ -18,15 +17,13 @@ description: "Simple Examples"
 					{param elementClasses: 'topbar-docs' /}
 				{/call}
 				{call Sidebar.render}
-					{param section: $page /}
+					{param section: $site.index /}
 				{/call}
 				{call .topics data="all" /}
 			</div>
 		</main>
 	</div>
 {/template}
-
-
 
 /**
  * @param page
