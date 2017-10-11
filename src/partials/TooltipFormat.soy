@@ -1,0 +1,35 @@
+{namespace TooltipFormat}
+
+/**
+ * This renders the Tooltip Format example
+ */
+{template .render}
+	{@param? formatName: any}
+	{@param? formatTitle: any}
+	{@param? formatValue: any}
+
+	{call Chart.render}
+		{param columns: [
+			[
+				'id': 'data1',
+				'data': [100, 150, 120, 90, 10, 55],
+				'axis': 'y'
+			],
+			[
+				'id': 'data2',
+				'data': [1000, 1700, 3000, 1200, 2000, 1010],
+				'axis': 'y2'
+			]
+		] /}
+		{param axisY2: [
+			'show': true
+		] /}
+		{param tooltip: [
+			'format': [
+				'name': $formatName,
+				'title': $formatTitle,
+				'value': $formatValue
+			]
+		] /}
+	{/call}
+{/template}
