@@ -8,6 +8,6 @@
     "metal-toggler": "^2.0.0"
   },
   "dependencies": {
-    "metal-charts": "^1.0.0-alpha.0"
+    "metal-charts": "^1.0.0-alpha.2"
   }
 }
