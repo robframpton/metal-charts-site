@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([1,19,20],[
+webpackJsonppageComponent([13,19,20],[
 /* 0 */,
 /* 1 */,
 /* 2 */
@@ -48406,24 +48406,12 @@ module.exports = function(module) {
 /* 588 */,
 /* 589 */,
 /* 590 */,
-/* 591 */,
-/* 592 */,
-/* 593 */,
-/* 594 */,
-/* 595 */,
-/* 596 */,
-/* 597 */,
-/* 598 */,
-/* 599 */,
-/* 600 */,
-/* 601 */,
-/* 602 */,
-/* 603 */
+/* 591 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "KJsFz", function() { return KJsFz; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "KNspY", function() { return KNspY; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -48439,11 +48427,11 @@ goog.loadModule(function(exports) {
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace KJsFz.
+ * @fileoverview Templates in namespace KNspY.
  * @public
  */
 
-goog.module('KJsFz.incrementaldom');
+goog.module('KNspY.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -48464,9 +48452,9 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias3 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
+var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('Chart.incrementaldom', 'render');
 
-var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('SplineChart.incrementaldom', 'render');
+var $templateAlias3 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
 
 var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
 
@@ -48479,18 +48467,18 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param469 = function() {
+  var param282 = function() {
     ie_open('h6');
-      var dyn25 = opt_data.page.description;
-      if (typeof dyn25 == 'function') dyn25(); else if (dyn25 != null) itext(dyn25);
+      var dyn17 = opt_data.page.description;
+      if (typeof dyn17 == 'function') dyn17(); else if (dyn17 != null) itext(dyn17);
     ie_close('h6');
     ie_open('article', null, null,
         'id', '1');
       ie_open('p');
-        $templateAlias2({columns: [{id: 'data1', data: [100, 20, 30]}, {id: 'data2', data: [20, 70, 100]}]}, null, opt_ijData);
+        $templateAlias2({columns: [{id: 'data1', data: [30, 20, 50, 40, 60, 50], type: 'bar'}, {id: 'data2', data: [200, 130, 90, 240, 130, 220], type: 'bar'}], groups: [['data1', 'data2']], regions: [{axis: 'y', start: 0, end: 100}, {axis: 'y', start: 200, end: 300}]}, null, opt_ijData);
       ie_close('p');
-      $templateAlias3({code: '{call SplineChart.render}\n    {param columns: [\n        [\n            \'id\': \'data1\',\n            \'data\': [100, 20, 30]\n        ],\n        [\n            \'id\': \'data2\',\n            \'data\': [20, 70, 100]\n        ]\n    ] /}\n{/call}', mode: 'soy'}, null, opt_ijData);
-      $templateAlias3({code: '<SplineChart\n    columns={[\n        {\n            id: \'data1\',\n            data: [100, 20, 30]\n        },\n        {\n            id: \'data2\',\n            data: [20, 70, 100]\n        }\n    ]}\n/>', mode: 'jsx'}, null, opt_ijData);
+      $templateAlias3({code: '{call Chart.render}\n    {param columns: [\n        [\n            \'id\': \'data1\',\n            \'data\': [30, 20, 50, 40, 60, 50],\n            \'type\': \'bar\'\n        ],\n        [\n            \'id\': \'data2\',\n            \'data\': [200, 130, 90, 240, 130, 220],\n            \'type\': \'bar\'\n        ]\n    ] /}\n    {param groups: [[\'data1\', \'data2\']] /}\n    {param regions: [\n        [\n            \'axis\': \'y\',\n            \'start\': 0,\n            \'end\': 100,\n        ],\n        [\n            \'axis\': \'y\',\n            \'start\': 200,\n            \'end\': 300,\n        ]\n    ]/}\n{/call}', mode: 'soy'}, null, opt_ijData);
+      $templateAlias3({code: '<Chart\n    columns={[\n        {\n            id: \'data1\',\n            data: [30, 20, 50, 40, 60, 50],\n            type: \'bar\'\n        },\n        {\n            id: \'data2\',\n            data: [200, 130, 90, 240, 130, 220],\n            type: \'bar\'\n        }\n    ]}\n    regions={[\n        {\n            axis: \'y\',\n            start: 0,\n            end: 100,\n        },\n        {\n            axis: \'y\',\n            start: 200,\n            end: 300,\n        }\n    ]}\n/>', mode: 'jsx'}, null, opt_ijData);
     ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
@@ -48501,11 +48489,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param469}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param282}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'KJsFz.render';
+  $render.soyTemplateName = 'KNspY.render';
 }
 
 exports.render.params = ["page","site"];
@@ -48515,14 +48503,26 @@ return exports;
 
 });
 
-class KJsFz extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(KJsFz, templates);
+class KNspY extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(KNspY, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 592 */,
+/* 593 */,
+/* 594 */,
+/* 595 */,
+/* 596 */,
+/* 597 */,
+/* 598 */,
+/* 599 */,
+/* 600 */,
+/* 601 */,
+/* 602 */,
+/* 603 */,
 /* 604 */,
 /* 605 */,
 /* 606 */,
@@ -48560,19 +48560,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(KJsFz, templates);
 /* 638 */,
 /* 639 */,
 /* 640 */,
-/* 641 */,
-/* 642 */,
-/* 643 */,
-/* 644 */,
-/* 645 */,
-/* 646 */,
-/* 647 */,
-/* 648 */,
-/* 649 */,
-/* 650 */,
-/* 651 */,
-/* 652 */,
-/* 653 */
+/* 641 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48604,7 +48592,7 @@ __webpack_require__(184);
 
 __webpack_require__(192);
 
-var _indexSoy = __webpack_require__(603);
+var _indexSoy = __webpack_require__(591);
 
 var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
@@ -48616,23 +48604,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var KJsFz = function (_Component) {
-  _inherits(KJsFz, _Component);
+var KNspY = function (_Component) {
+  _inherits(KNspY, _Component);
 
-  function KJsFz() {
-    _classCallCheck(this, KJsFz);
+  function KNspY() {
+    _classCallCheck(this, KNspY);
 
-    return _possibleConstructorReturn(this, (KJsFz.__proto__ || Object.getPrototypeOf(KJsFz)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (KNspY.__proto__ || Object.getPrototypeOf(KNspY)).apply(this, arguments));
   }
 
-  return KJsFz;
+  return KNspY;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(KJsFz, _indexSoy2.default);
+_metalSoy2.default.register(KNspY, _indexSoy2.default);
 
-exports.default = KJsFz;
+exports.default = KNspY;
 
 /***/ })
-],[653]);
+],[641]);

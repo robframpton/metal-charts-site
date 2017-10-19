@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([6,19,20],[
+webpackJsonppageComponent([16,19,20],[
 /* 0 */,
 /* 1 */,
 /* 2 */
@@ -48403,22 +48403,12 @@ module.exports = function(module) {
 /* 585 */,
 /* 586 */,
 /* 587 */,
-/* 588 */,
-/* 589 */,
-/* 590 */,
-/* 591 */,
-/* 592 */,
-/* 593 */,
-/* 594 */,
-/* 595 */,
-/* 596 */,
-/* 597 */,
-/* 598 */
+/* 588 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "xZMwT", function() { return xZMwT; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "tkmZM", function() { return tkmZM; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -48434,11 +48424,11 @@ goog.loadModule(function(exports) {
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace xZMwT.
+ * @fileoverview Templates in namespace tkmZM.
  * @public
  */
 
-goog.module('xZMwT.incrementaldom');
+goog.module('tkmZM.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -48459,9 +48449,9 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias3 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
+var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('Chart.incrementaldom', 'render');
 
-var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('GaugeChart.incrementaldom', 'render');
+var $templateAlias3 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
 
 var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
 
@@ -48474,18 +48464,18 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param377 = function() {
+  var param246 = function() {
     ie_open('h6');
-      var dyn21 = opt_data.page.description;
-      if (typeof dyn21 == 'function') dyn21(); else if (dyn21 != null) itext(dyn21);
+      var dyn15 = opt_data.page.description;
+      if (typeof dyn15 == 'function') dyn15(); else if (dyn15 != null) itext(dyn15);
     ie_close('h6');
     ie_open('article', null, null,
         'id', '1');
       ie_open('p');
-        $templateAlias2({columns: [{id: 'data1', data: [87.4]}]}, null, opt_ijData);
+        $templateAlias2({columns: [{id: 'data1', data: [10, 90, 30, 120, 20, 160], color: 'hotpink'}, {id: 'data2', data: [200, 150, 120, 90, 10, 75], color: 'cadetblue'}]}, null, opt_ijData);
       ie_close('p');
-      $templateAlias3({code: '{call GaugeChart.render}\n    {param columns: [\n        [\n            \'id\': \'data1\',\n            \'data\': [87.4]\n        ]\n    ] /}\n{/call}', mode: 'soy'}, null, opt_ijData);
-      $templateAlias3({code: '<GaugeChart\n    columns={[\n        {\n            id: \'data1\',\n            data: [87.4]\n        }\n    ]}\n/>', mode: 'jsx'}, null, opt_ijData);
+      $templateAlias3({code: '{call Chart.render}\n    {param columns: [\n        [\n            \'id\': \'data1\',\n            \'data\': [10, 90, 30, 120, 20, 160],\n            \'color\': \'hotpink\'\n        ],\n        [\n            \'id\': \'data2\',\n            \'data\': [200, 150, 120, 90, 10, 75],\n            \'color\': \'cadetblue\'\n        ]\n    ] /}\n{/call}', mode: 'soy'}, null, opt_ijData);
+      $templateAlias3({code: '<Chart\n    columns={[\n        {\n            id: \'data1\',\n            data: [10, 90, 30, 120, 20, 160],\n            color: \'hotpink\'\n        },\n        {\n            id: \'data2\',\n            data: [200, 150, 120, 90, 10, 75],\n            color: \'cadetblue\'\n        }\n    ]}\n/>', mode: 'jsx'}, null, opt_ijData);
     ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
@@ -48496,11 +48486,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param377}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param246}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'xZMwT.render';
+  $render.soyTemplateName = 'tkmZM.render';
 }
 
 exports.render.params = ["page","site"];
@@ -48510,14 +48500,24 @@ return exports;
 
 });
 
-class xZMwT extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(xZMwT, templates);
+class tkmZM extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(tkmZM, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 589 */,
+/* 590 */,
+/* 591 */,
+/* 592 */,
+/* 593 */,
+/* 594 */,
+/* 595 */,
+/* 596 */,
+/* 597 */,
+/* 598 */,
 /* 599 */,
 /* 600 */,
 /* 601 */,
@@ -48558,16 +48558,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(xZMwT, templates);
 /* 636 */,
 /* 637 */,
 /* 638 */,
-/* 639 */,
-/* 640 */,
-/* 641 */,
-/* 642 */,
-/* 643 */,
-/* 644 */,
-/* 645 */,
-/* 646 */,
-/* 647 */,
-/* 648 */
+/* 639 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48599,7 +48590,7 @@ __webpack_require__(184);
 
 __webpack_require__(192);
 
-var _indexSoy = __webpack_require__(598);
+var _indexSoy = __webpack_require__(588);
 
 var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
@@ -48611,23 +48602,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var xZMwT = function (_Component) {
-  _inherits(xZMwT, _Component);
+var tkmZM = function (_Component) {
+  _inherits(tkmZM, _Component);
 
-  function xZMwT() {
-    _classCallCheck(this, xZMwT);
+  function tkmZM() {
+    _classCallCheck(this, tkmZM);
 
-    return _possibleConstructorReturn(this, (xZMwT.__proto__ || Object.getPrototypeOf(xZMwT)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (tkmZM.__proto__ || Object.getPrototypeOf(tkmZM)).apply(this, arguments));
   }
 
-  return xZMwT;
+  return tkmZM;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(xZMwT, _indexSoy2.default);
+_metalSoy2.default.register(tkmZM, _indexSoy2.default);
 
-exports.default = xZMwT;
+exports.default = tkmZM;
 
 /***/ })
-],[648]);
+],[639]);

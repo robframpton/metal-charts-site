@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([9,19,20],[
+webpackJsonppageComponent([17,19,20],[
 /* 0 */,
 /* 1 */,
 /* 2 */
@@ -48402,20 +48402,12 @@ module.exports = function(module) {
 /* 584 */,
 /* 585 */,
 /* 586 */,
-/* 587 */,
-/* 588 */,
-/* 589 */,
-/* 590 */,
-/* 591 */,
-/* 592 */,
-/* 593 */,
-/* 594 */,
-/* 595 */
+/* 587 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ytEcs", function() { return ytEcs; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "IfKYW", function() { return IfKYW; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -48431,11 +48423,11 @@ goog.loadModule(function(exports) {
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace ytEcs.
+ * @fileoverview Templates in namespace IfKYW.
  * @public
  */
 
-goog.module('ytEcs.incrementaldom');
+goog.module('IfKYW.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -48456,7 +48448,7 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('BarChart.incrementaldom', 'render');
+var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('Chart.incrementaldom', 'render');
 
 var $templateAlias3 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
 
@@ -48471,18 +48463,18 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param307 = function() {
+  var param198 = function() {
     ie_open('h6');
-      var dyn18 = opt_data.page.description;
-      if (typeof dyn18 == 'function') dyn18(); else if (dyn18 != null) itext(dyn18);
+      var dyn13 = opt_data.page.description;
+      if (typeof dyn13 == 'function') dyn13(); else if (dyn13 != null) itext(dyn13);
     ie_close('h6');
     ie_open('article', null, null,
         'id', '1');
       ie_open('p');
-        $templateAlias2({columns: [{id: 'data1', data: [100, 20, 30]}, {id: 'data2', data: [20, 70, 100]}]}, null, opt_ijData);
+        $templateAlias2({columns: [{id: 'data1', data: [10, 90, 30, 120, 20, 160], axis: 'y'}, {id: 'data2', data: [200, 150, 120, 90, 10, 75], axis: 'y2'}], axisY2: {max: 230, min: 10, show: true}}, null, opt_ijData);
       ie_close('p');
-      $templateAlias3({code: '{call BarChart.render}\n    {param columns: [\n        [\n            \'id\': \'data1\',\n            \'data\': [100, 20, 30]\n        ],\n        [\n            \'id\': \'data2\',\n            \'data\': [20, 70, 100]\n        ]\n    ] /}\n{/call}', mode: 'soy'}, null, opt_ijData);
-      $templateAlias3({code: '<BarChart\n    columns={[\n        {\n            id: \'data1\',\n            data: [100, 20, 30]\n        },\n        {\n            id: \'data2\',\n            data: [20, 70, 100]\n        }\n    ]}\n/>', mode: 'jsx'}, null, opt_ijData);
+      $templateAlias3({code: '{call Chart.render}\n    {param columns: [\n        [\n            \'id\': \'data1\',\n            \'data\': [10, 90, 30, 120, 20, 160],\n            \'axis\': \'y\'\n        ],\n        [\n            \'id\': \'data2\',\n            \'data\': [200, 150, 120, 90, 10, 75],\n            \'axis\': \'y2\'\n        ]\n    ] /}\n    {param axisY2: [\n        \'max\': 230,\n        \'min\': 10,\n        \'show\': true\n    ] /}\n{/call}', mode: 'soy'}, null, opt_ijData);
+      $templateAlias3({code: '<Chart\n    columns={[\n        {\n            id: \'data1\',\n            data: [10, 90, 30, 120, 20, 160],\n            axis: \'y\'\n        },\n        {\n            id: \'data2\',\n            data: [200, 150, 120, 90, 10, 75],\n            axis: \'y2\'\n        }\n    ]}\n    axisY2={\n        max: 230,\n        min: 10,\n        show: true\n    }\n/>', mode: 'jsx'}, null, opt_ijData);
     ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
@@ -48493,11 +48485,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param307}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param198}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'ytEcs.render';
+  $render.soyTemplateName = 'IfKYW.render';
 }
 
 exports.render.params = ["page","site"];
@@ -48507,14 +48499,22 @@ return exports;
 
 });
 
-class ytEcs extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(ytEcs, templates);
+class IfKYW extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(IfKYW, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 588 */,
+/* 589 */,
+/* 590 */,
+/* 591 */,
+/* 592 */,
+/* 593 */,
+/* 594 */,
+/* 595 */,
 /* 596 */,
 /* 597 */,
 /* 598 */,
@@ -48557,14 +48557,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(ytEcs, templates);
 /* 635 */,
 /* 636 */,
 /* 637 */,
-/* 638 */,
-/* 639 */,
-/* 640 */,
-/* 641 */,
-/* 642 */,
-/* 643 */,
-/* 644 */,
-/* 645 */
+/* 638 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48596,7 +48589,7 @@ __webpack_require__(184);
 
 __webpack_require__(192);
 
-var _indexSoy = __webpack_require__(595);
+var _indexSoy = __webpack_require__(587);
 
 var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
@@ -48608,23 +48601,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var ytEcs = function (_Component) {
-  _inherits(ytEcs, _Component);
+var IfKYW = function (_Component) {
+  _inherits(IfKYW, _Component);
 
-  function ytEcs() {
-    _classCallCheck(this, ytEcs);
+  function IfKYW() {
+    _classCallCheck(this, IfKYW);
 
-    return _possibleConstructorReturn(this, (ytEcs.__proto__ || Object.getPrototypeOf(ytEcs)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (IfKYW.__proto__ || Object.getPrototypeOf(IfKYW)).apply(this, arguments));
   }
 
-  return ytEcs;
+  return IfKYW;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(ytEcs, _indexSoy2.default);
+_metalSoy2.default.register(IfKYW, _indexSoy2.default);
 
-exports.default = ytEcs;
+exports.default = IfKYW;
 
 /***/ })
-],[645]);
+],[638]);

@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([16,19,20],[
+webpackJsonppageComponent([18,19,20],[
 /* 0 */,
 /* 1 */,
 /* 2 */
@@ -48401,14 +48401,12 @@ module.exports = function(module) {
 /* 583 */,
 /* 584 */,
 /* 585 */,
-/* 586 */,
-/* 587 */,
-/* 588 */
+/* 586 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AWTuu", function() { return AWTuu; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SUqnM", function() { return SUqnM; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -48424,11 +48422,11 @@ goog.loadModule(function(exports) {
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace AWTuu.
+ * @fileoverview Templates in namespace SUqnM.
  * @public
  */
 
-goog.module('AWTuu.incrementaldom');
+goog.module('SUqnM.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -48464,18 +48462,18 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param222 = function() {
+  var param173 = function() {
     ie_open('h6');
-      var dyn14 = opt_data.page.description;
-      if (typeof dyn14 == 'function') dyn14(); else if (dyn14 != null) itext(dyn14);
+      var dyn12 = opt_data.page.description;
+      if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
     ie_close('h6');
     ie_open('article', null, null,
         'id', '1');
       ie_open('p');
-        $templateAlias2({columns: [{id: 'data1', data: [10, 90, 30, 120, 20, 160], color: 'hotpink'}, {id: 'data2', data: [200, 150, 120, 90, 10, 75], color: 'cadetblue'}]}, null, opt_ijData);
+        $templateAlias2({columns: [{id: 'data1', data: [10, 70, 30, 120, 20, 10], axis: 'y'}, {id: 'data2', data: [100, 150, 120, 90, 10, 55], axis: 'y2'}], axisY: {label: 'Y Axis Label'}, axisY2: {label: 'Y2 Axis Label', show: true}}, null, opt_ijData);
       ie_close('p');
-      $templateAlias3({code: '{call Chart.render}\n    {param columns: [\n        [\n            \'id\': \'data1\',\n            \'data\': [10, 90, 30, 120, 20, 160],\n            \'color\': \'hotpink\'\n        ],\n        [\n            \'id\': \'data2\',\n            \'data\': [200, 150, 120, 90, 10, 75],\n            \'color\': \'cadetblue\'\n        ]\n    ] /}\n{/call}', mode: 'soy'}, null, opt_ijData);
-      $templateAlias3({code: '<Chart\n    columns={[\n        {\n            id: \'data1\',\n            data: [10, 90, 30, 120, 20, 160],\n            color: \'hotpink\'\n        },\n        {\n            id: \'data2\',\n            data: [200, 150, 120, 90, 10, 75],\n            color: \'cadetblue\'\n        }\n    ]}\n/>', mode: 'jsx'}, null, opt_ijData);
+      $templateAlias3({code: '{call Chart.render}\n    {param columns: [\n        [\n            \'id\': \'data1\',\n            \'data\': [10, 70, 30, 120, 20, 10],\n            \'axis\': \'y\'\n        ],\n        [\n            \'id\': \'data2\',\n            \'data\': [100, 150, 120, 90, 10, 55],\n            \'axis\': \'y2\'\n        ]\n    ] /}\n    {param axisY: [\n        \'label\': \'Y Axis Label\'\n    ] /}\n    {param axisY2: [\n        \'label\': \'Y2 Axis Label\',\n        \'show\': true\n    ] /}\n{/call}', mode: 'soy'}, null, opt_ijData);
+      $templateAlias3({code: '<Chart\n    columns={[\n        {\n            id: \'data1\',\n            data: [10, 70, 30, 120, 20, 10],\n            axis: \'y\'\n        },\n        {\n            id: \'data2\',\n            data: [100, 150, 120, 90, 10, 55],\n            axis: \'y2\'\n        }\n    ]}\n    axisY={\n        label: \'Y Axis Label\'\n    }\n    axisY2={\n        label: \'Y2 Axis Label\',\n        show: true\n    }\n/>', mode: 'jsx'}, null, opt_ijData);
     ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
@@ -48486,11 +48484,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param222}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param173}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'AWTuu.render';
+  $render.soyTemplateName = 'SUqnM.render';
 }
 
 exports.render.params = ["page","site"];
@@ -48500,14 +48498,16 @@ return exports;
 
 });
 
-class AWTuu extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(AWTuu, templates);
+class SUqnM extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(SUqnM, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 587 */,
+/* 588 */,
 /* 589 */,
 /* 590 */,
 /* 591 */,
@@ -48556,9 +48556,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(AWTuu, templates);
 /* 634 */,
 /* 635 */,
 /* 636 */,
-/* 637 */,
-/* 638 */,
-/* 639 */
+/* 637 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48590,7 +48588,7 @@ __webpack_require__(184);
 
 __webpack_require__(192);
 
-var _indexSoy = __webpack_require__(588);
+var _indexSoy = __webpack_require__(586);
 
 var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
@@ -48602,23 +48600,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var AWTuu = function (_Component) {
-  _inherits(AWTuu, _Component);
+var SUqnM = function (_Component) {
+  _inherits(SUqnM, _Component);
 
-  function AWTuu() {
-    _classCallCheck(this, AWTuu);
+  function SUqnM() {
+    _classCallCheck(this, SUqnM);
 
-    return _possibleConstructorReturn(this, (AWTuu.__proto__ || Object.getPrototypeOf(AWTuu)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (SUqnM.__proto__ || Object.getPrototypeOf(SUqnM)).apply(this, arguments));
   }
 
-  return AWTuu;
+  return SUqnM;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(AWTuu, _indexSoy2.default);
+_metalSoy2.default.register(SUqnM, _indexSoy2.default);
 
-exports.default = AWTuu;
+exports.default = SUqnM;
 
 /***/ })
-],[639]);
+],[637]);

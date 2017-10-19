@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([13,19,20],[
+webpackJsonppageComponent([0,19,20],[
 /* 0 */,
 /* 1 */,
 /* 2 */
@@ -48406,12 +48406,25 @@ module.exports = function(module) {
 /* 588 */,
 /* 589 */,
 /* 590 */,
-/* 591 */
+/* 591 */,
+/* 592 */,
+/* 593 */,
+/* 594 */,
+/* 595 */,
+/* 596 */,
+/* 597 */,
+/* 598 */,
+/* 599 */,
+/* 600 */,
+/* 601 */,
+/* 602 */,
+/* 603 */,
+/* 604 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "gmsiT", function() { return gmsiT; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "zEvqv", function() { return zEvqv; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -48427,11 +48440,11 @@ goog.loadModule(function(exports) {
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace gmsiT.
+ * @fileoverview Templates in namespace zEvqv.
  * @public
  */
 
-goog.module('gmsiT.incrementaldom');
+goog.module('zEvqv.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -48452,9 +48465,9 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('Chart.incrementaldom', 'render');
-
 var $templateAlias3 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
+
+var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('StepChart.incrementaldom', 'render');
 
 var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
 
@@ -48467,18 +48480,18 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param269 = function() {
+  var param492 = function() {
     ie_open('h6');
-      var dyn16 = opt_data.page.description;
-      if (typeof dyn16 == 'function') dyn16(); else if (dyn16 != null) itext(dyn16);
+      var dyn26 = opt_data.page.description;
+      if (typeof dyn26 == 'function') dyn26(); else if (dyn26 != null) itext(dyn26);
     ie_close('h6');
     ie_open('article', null, null,
         'id', '1');
       ie_open('p');
-        $templateAlias2({columns: [{id: 'data1', data: [30, 20, 50, 40, 60, 50], type: 'bar'}, {id: 'data2', data: [200, 130, 90, 240, 130, 220], type: 'bar'}], groups: [['data1', 'data2']], regions: [{axis: 'y', start: 0, end: 100}, {axis: 'y', start: 200, end: 300}]}, null, opt_ijData);
+        $templateAlias2({columns: [{id: 'data1', data: [100, 20, 30]}, {id: 'data2', data: [20, 70, 100]}]}, null, opt_ijData);
       ie_close('p');
-      $templateAlias3({code: '{call Chart.render}\n    {param columns: [\n        [\n            \'id\': \'data1\',\n            \'data\': [30, 20, 50, 40, 60, 50],\n            \'type\': \'bar\'\n        ],\n        [\n            \'id\': \'data2\',\n            \'data\': [200, 130, 90, 240, 130, 220],\n            \'type\': \'bar\'\n        ]\n    ] /}\n    {param groups: [[\'data1\', \'data2\']] /}\n    {param regions: [\n        [\n            \'axis\': \'y\',\n            \'start\': 0,\n            \'end\': 100,\n        ],\n        [\n            \'axis\': \'y\',\n            \'start\': 200,\n            \'end\': 300,\n        ]\n    ]/}\n{/call}', mode: 'soy'}, null, opt_ijData);
-      $templateAlias3({code: '<Chart\n    columns={[\n        {\n            id: \'data1\',\n            data: [30, 20, 50, 40, 60, 50],\n            type: \'bar\'\n        },\n        {\n            id: \'data2\',\n            data: [200, 130, 90, 240, 130, 220],\n            type: \'bar\'\n        }\n    ]}\n    regions={[\n        {\n            axis: \'y\',\n            start: 0,\n            end: 100,\n        },\n        {\n            axis: \'y\',\n            start: 200,\n            end: 300,\n        }\n    ]}\n/>', mode: 'jsx'}, null, opt_ijData);
+      $templateAlias3({code: '{call StepChart.render}\n    {param columns: [\n        [\n            \'id\': \'data1\',\n            \'data\': [100, 20, 30]\n        ],\n        [\n            \'id\': \'data2\',\n            \'data\': [20, 70, 100]\n        ]\n    ] /}\n{/call}', mode: 'soy'}, null, opt_ijData);
+      $templateAlias3({code: '<StepChart\n    columns={[\n        {\n            id: \'data1\',\n            data: [100, 20, 30]\n        },\n        {\n            id: \'data2\',\n            data: [20, 70, 100]\n        }\n    ]}\n/>', mode: 'jsx'}, null, opt_ijData);
     ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
@@ -48489,11 +48502,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param269}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param492}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'gmsiT.render';
+  $render.soyTemplateName = 'zEvqv.render';
 }
 
 exports.render.params = ["page","site"];
@@ -48503,27 +48516,14 @@ return exports;
 
 });
 
-class gmsiT extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(gmsiT, templates);
+class zEvqv extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(zEvqv, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 592 */,
-/* 593 */,
-/* 594 */,
-/* 595 */,
-/* 596 */,
-/* 597 */,
-/* 598 */,
-/* 599 */,
-/* 600 */,
-/* 601 */,
-/* 602 */,
-/* 603 */,
-/* 604 */,
 /* 605 */,
 /* 606 */,
 /* 607 */,
@@ -48560,7 +48560,20 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(gmsiT, templates);
 /* 638 */,
 /* 639 */,
 /* 640 */,
-/* 641 */
+/* 641 */,
+/* 642 */,
+/* 643 */,
+/* 644 */,
+/* 645 */,
+/* 646 */,
+/* 647 */,
+/* 648 */,
+/* 649 */,
+/* 650 */,
+/* 651 */,
+/* 652 */,
+/* 653 */,
+/* 654 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48592,7 +48605,7 @@ __webpack_require__(184);
 
 __webpack_require__(192);
 
-var _indexSoy = __webpack_require__(591);
+var _indexSoy = __webpack_require__(604);
 
 var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
@@ -48604,23 +48617,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var gmsiT = function (_Component) {
-  _inherits(gmsiT, _Component);
+var zEvqv = function (_Component) {
+  _inherits(zEvqv, _Component);
 
-  function gmsiT() {
-    _classCallCheck(this, gmsiT);
+  function zEvqv() {
+    _classCallCheck(this, zEvqv);
 
-    return _possibleConstructorReturn(this, (gmsiT.__proto__ || Object.getPrototypeOf(gmsiT)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (zEvqv.__proto__ || Object.getPrototypeOf(zEvqv)).apply(this, arguments));
   }
 
-  return gmsiT;
+  return zEvqv;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(gmsiT, _indexSoy2.default);
+_metalSoy2.default.register(zEvqv, _indexSoy2.default);
 
-exports.default = gmsiT;
+exports.default = zEvqv;
 
 /***/ })
-],[641]);
+],[654]);
