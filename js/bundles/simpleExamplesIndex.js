@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([11,19,20],[
+webpackJsonppageComponent([5,19,20],[
 /* 0 */,
 /* 1 */,
 /* 2 */
@@ -48408,12 +48408,18 @@ module.exports = function(module) {
 /* 590 */,
 /* 591 */,
 /* 592 */,
-/* 593 */
+/* 593 */,
+/* 594 */,
+/* 595 */,
+/* 596 */,
+/* 597 */,
+/* 598 */,
+/* 599 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "pageDocsIndex", function() { return pageDocsIndex; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "simpleExamplesIndex", function() { return simpleExamplesIndex; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -48429,11 +48435,11 @@ goog.loadModule(function(exports) {
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace pageDocsIndex.
+ * @fileoverview Templates in namespace simpleExamplesIndex.
  * @public
  */
 
-goog.module('pageDocsIndex.incrementaldom');
+goog.module('simpleExamplesIndex.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -48476,7 +48482,7 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       ie_open('div', null, null,
           'class', 'docs');
         $templateAlias1(soy.$$assignDefaults({elementClasses: 'topbar-docs'}, opt_data), null, opt_ijData);
-        $templateAlias2({section: opt_data.page}, null, opt_ijData);
+        $templateAlias2({section: opt_data.site.index}, null, opt_ijData);
         $topics(opt_data, null, opt_ijData);
       ie_close('div');
     ie_close('main');
@@ -48484,7 +48490,7 @@ function $render(opt_data, opt_ignored, opt_ijData) {
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'pageDocsIndex.render';
+  $render.soyTemplateName = 'simpleExamplesIndex.render';
 }
 
 
@@ -48506,8 +48512,8 @@ function $topics(opt_data, opt_ignored, opt_ijData) {
             'class', 'col-xs-16');
           ie_open('h1', null, null,
               'class', 'docs-home-top-title');
-            var dyn3 = opt_data.page.title;
-            if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
+            var dyn10 = opt_data.page.title;
+            if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
           ie_close('h1');
         ie_close('div');
       ie_close('div');
@@ -48545,7 +48551,7 @@ function $topics(opt_data, opt_ignored, opt_ijData) {
                 'class', 'docs-home-middle');
               ie_open('h2', null, null,
                   'class', 'docs-home-middle-subtitle');
-                itext('Available Examples');
+                itext('Choose an Example');
               ie_close('h2');
             ie_close('section');
           ie_close('div');
@@ -48556,17 +48562,17 @@ function $topics(opt_data, opt_ignored, opt_ijData) {
               'class', 'col-md-12 col-md-offset-2 col-xs-16');
             ie_open('div', null, null,
                 'class', 'row');
-              var childIdList50 = opt_data.page.childIds;
-              var childIdListLen50 = childIdList50.length;
-              for (var childIdIndex50 = 0; childIdIndex50 < childIdListLen50; childIdIndex50++) {
-                var childIdData50 = childIdList50[childIdIndex50];
-                var topic__soy42 = opt_data.page.children[childIdData50];
-                if (! topic__soy42.hidden) {
+              var childIdList168 = opt_data.page.childIds;
+              var childIdListLen168 = childIdList168.length;
+              for (var childIdIndex168 = 0; childIdIndex168 < childIdListLen168; childIdIndex168++) {
+                var childIdData168 = childIdList168[childIdIndex168];
+                var topic__soy160 = opt_data.page.children[childIdData168];
+                if (! topic__soy160.hidden) {
                   ie_open('div', null, null,
                       'class', 'col-md-8 col-md-offset-0 col-xs-14 col-xs-offset-1');
                     ie_open('a', null, null,
                         'class', 'topic radial-out',
-                        'href', topic__soy42.url);
+                        'href', topic__soy160.url);
                       ie_open('div', null, null,
                           'class', 'topic-icon');
                         ie_void('span', null, null,
@@ -48574,8 +48580,8 @@ function $topics(opt_data, opt_ignored, opt_ijData) {
                       ie_close('div');
                       ie_open('h3', null, null,
                           'class', 'topic-title');
-                        var dyn4 = topic__soy42.title;
-                        if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
+                        var dyn11 = topic__soy160.title;
+                        if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
                       ie_close('h3');
                     ie_close('a');
                   ie_close('div');
@@ -48590,7 +48596,7 @@ function $topics(opt_data, opt_ignored, opt_ijData) {
 }
 exports.topics = $topics;
 if (goog.DEBUG) {
-  $topics.soyTemplateName = 'pageDocsIndex.topics';
+  $topics.soyTemplateName = 'simpleExamplesIndex.topics';
 }
 
 exports.render.params = ["page","site"];
@@ -48602,20 +48608,14 @@ return exports;
 
 });
 
-class pageDocsIndex extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(pageDocsIndex, templates);
+class simpleExamplesIndex extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(simpleExamplesIndex, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 594 */,
-/* 595 */,
-/* 596 */,
-/* 597 */,
-/* 598 */,
-/* 599 */,
 /* 600 */,
 /* 601 */,
 /* 602 */,
@@ -48659,7 +48659,16 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(pageDocsIndex, templa
 /* 640 */,
 /* 641 */,
 /* 642 */,
-/* 643 */
+/* 643 */,
+/* 644 */,
+/* 645 */,
+/* 646 */,
+/* 647 */,
+/* 648 */,
+/* 649 */,
+/* 650 */,
+/* 651 */,
+/* 652 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48691,7 +48700,7 @@ __webpack_require__(184);
 
 __webpack_require__(192);
 
-var _indexSoy = __webpack_require__(593);
+var _indexSoy = __webpack_require__(599);
 
 var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
@@ -48703,23 +48712,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var pageDocsIndex = function (_Component) {
-  _inherits(pageDocsIndex, _Component);
+var simpleExamplesIndex = function (_Component) {
+  _inherits(simpleExamplesIndex, _Component);
 
-  function pageDocsIndex() {
-    _classCallCheck(this, pageDocsIndex);
+  function simpleExamplesIndex() {
+    _classCallCheck(this, simpleExamplesIndex);
 
-    return _possibleConstructorReturn(this, (pageDocsIndex.__proto__ || Object.getPrototypeOf(pageDocsIndex)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (simpleExamplesIndex.__proto__ || Object.getPrototypeOf(simpleExamplesIndex)).apply(this, arguments));
   }
 
-  return pageDocsIndex;
+  return simpleExamplesIndex;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(pageDocsIndex, _indexSoy2.default);
+_metalSoy2.default.register(simpleExamplesIndex, _indexSoy2.default);
 
-exports.default = pageDocsIndex;
+exports.default = simpleExamplesIndex;
 
 /***/ })
-],[643]);
+],[652]);
