@@ -11,5 +11,8 @@ module.exports = {
 		includePaths: ['node_modules', marble.src]
 	},
 	codeMirrorLanguages: ['javascript', 'jsx', 'soy', 'xml'],
-	vendorSrc: ['node_modules/marble/build/fonts/**', path.join(billboardDistPath, 'billboard.css')]
+	vendorSrc: [
+		'node_modules/marble/build/fonts/**',
+		'node_modules/metal-charts/lib/css/*'
+	]
 };
