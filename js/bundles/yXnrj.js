@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([2,19,20],[
+webpackJsonppageComponent([8,20,21],[
 /* 0 */,
 /* 1 */,
 /* 2 */
@@ -48412,17 +48412,12 @@ module.exports = function(module) {
 /* 594 */,
 /* 595 */,
 /* 596 */,
-/* 597 */,
-/* 598 */,
-/* 599 */,
-/* 600 */,
-/* 601 */,
-/* 602 */
+/* 597 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "XyGly", function() { return XyGly; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "yXnrj", function() { return yXnrj; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -48438,11 +48433,11 @@ goog.loadModule(function(exports) {
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace XyGly.
+ * @fileoverview Templates in namespace yXnrj.
  * @public
  */
 
-goog.module('XyGly.incrementaldom');
+goog.module('yXnrj.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -48463,9 +48458,9 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias3 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
+var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('Chart.incrementaldom', 'render');
 
-var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ScatterChart.incrementaldom', 'render');
+var $templateAlias3 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
 
 var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
 
@@ -48478,18 +48473,18 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param446 = function() {
+  var param355 = function() {
     ie_open('h6');
-      var dyn24 = opt_data.page.description;
-      if (typeof dyn24 == 'function') dyn24(); else if (dyn24 != null) itext(dyn24);
+      var dyn20 = opt_data.page.description;
+      if (typeof dyn20 == 'function') dyn20(); else if (dyn20 != null) itext(dyn20);
     ie_close('h6');
     ie_open('article', null, null,
         'id', '1');
       ie_open('p');
-        $templateAlias2({columns: [{id: 'data1', data: [100, 20, 30]}, {id: 'data2', data: [20, 70, 100]}]}, null, opt_ijData);
+        $templateAlias2({columns: [{id: 'data1', data: [30, 20, 50, 40, 60, 50], type: 'bar'}, {id: 'data2', data: [200, 130, 90, 240, 130, 220], type: 'bar'}, {id: 'data3', data: [300, 200, 160, 400, 250, 250], type: 'spline'}, {id: 'data4', data: [200, 130, 90, 240, 130, 220], type: 'line'}, {id: 'data5', data: [130, 120, 150, 140, 160, 150], type: 'bar'}, {id: 'data6', data: [90, 70, 20, 50, 60, 120], type: 'area'}], groups: [['data1', 'data2']]}, null, opt_ijData);
       ie_close('p');
-      $templateAlias3({code: '{call ScatterChart.render}\n    {param columns: [\n        [\n            \'id\': \'data1\',\n            \'data\': [100, 20, 30]\n        ],\n        [\n            \'id\': \'data2\',\n            \'data\': [20, 70, 100]\n        ]\n    ] /}\n{/call}', mode: 'soy'}, null, opt_ijData);
-      $templateAlias3({code: '<ScatterChart\n    columns={[\n        {\n            id: \'data1\',\n            data: [100, 20, 30]\n        },\n        {\n            id: \'data2\',\n            data: [20, 70, 100]\n        }\n    ]}\n/>', mode: 'jsx'}, null, opt_ijData);
+      $templateAlias3({code: '{call Chart.render}\n    {param columns: [\n        [\n            \'id\': \'data1\',\n            \'data\': [30, 20, 50, 40, 60, 50],\n            \'type\': \'bar\'\n        ],\n        [\n            \'id\': \'data2\',\n            \'data\': [200, 130, 90, 240, 130, 220],\n            \'type\': \'bar\'\n        ],\n        [\n            \'id\': \'data3\',\n            \'data\': [300, 200, 160, 400, 250, 250],\n            \'type\': \'spline\'\n        ],\n        [\n            \'id\': \'data4\',\n            \'data\': [200, 130, 90, 240, 130, 220],\n            \'type\': \'line\'\n        ],\n        [\n            \'id\': \'data5\',\n            \'data\': [130, 120, 150, 140, 160, 150],\n            \'type\': \'bar\'\n        ],\n        [\n            \'id\': \'data6\',\n            \'data\': [90, 70, 20, 50, 60, 120],\n            \'type\': \'area\'\n        ]\n    ] /}\n    {param groups: [[\'data1\', \'data2\']] /}\n{/call}', mode: 'soy'}, null, opt_ijData);
+      $templateAlias3({code: '<Chart\n    columns={[\n        {\n            id: \'data1\',\n            data: [30, 20, 50, 40, 60, 50],\n            type: \'bar\'\n        },\n        {\n            id: \'data2\',\n            data: [200, 130, 90, 240, 130, 220],\n            type: \'bar\'\n        },\n        {\n            id: \'data3\',\n            data: [300, 200, 160, 400, 250, 250],\n            type: \'spline\'\n        },\n        {\n            id: \'data4\',\n            data: [200, 130, 90, 240, 130, 220],\n            type: \'line\'\n        },\n        {\n            id: \'data5\',\n            data: [130, 120, 150, 140, 160, 150],\n            type: \'bar\'\n        },\n        {\n            id: \'data6\',\n            data: [90, 70, 20, 50, 60, 120],\n            type: \'area\'\n        }\n    ]}\n    groups={[\'data1\', \'data2\']}\n/>', mode: 'jsx'}, null, opt_ijData);
     ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
@@ -48500,11 +48495,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param446}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param355}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'XyGly.render';
+  $render.soyTemplateName = 'yXnrj.render';
 }
 
 exports.render.params = ["page","site"];
@@ -48514,14 +48509,19 @@ return exports;
 
 });
 
-class XyGly extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(XyGly, templates);
+class yXnrj extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(yXnrj, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 598 */,
+/* 599 */,
+/* 600 */,
+/* 601 */,
+/* 602 */,
 /* 603 */,
 /* 604 */,
 /* 605 */,
@@ -48567,10 +48567,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(XyGly, templates);
 /* 645 */,
 /* 646 */,
 /* 647 */,
-/* 648 */,
-/* 649 */,
-/* 650 */,
-/* 651 */
+/* 648 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48602,7 +48599,7 @@ __webpack_require__(184);
 
 __webpack_require__(192);
 
-var _indexSoy = __webpack_require__(602);
+var _indexSoy = __webpack_require__(597);
 
 var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
@@ -48614,23 +48611,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var XyGly = function (_Component) {
-  _inherits(XyGly, _Component);
+var yXnrj = function (_Component) {
+  _inherits(yXnrj, _Component);
 
-  function XyGly() {
-    _classCallCheck(this, XyGly);
+  function yXnrj() {
+    _classCallCheck(this, yXnrj);
 
-    return _possibleConstructorReturn(this, (XyGly.__proto__ || Object.getPrototypeOf(XyGly)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (yXnrj.__proto__ || Object.getPrototypeOf(yXnrj)).apply(this, arguments));
   }
 
-  return XyGly;
+  return yXnrj;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(XyGly, _indexSoy2.default);
+_metalSoy2.default.register(yXnrj, _indexSoy2.default);
 
-exports.default = XyGly;
+exports.default = yXnrj;
 
 /***/ })
-],[651]);
+],[648]);

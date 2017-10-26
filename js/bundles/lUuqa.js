@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([10,20,21],[
+webpackJsonppageComponent([3,20,21],[
 /* 0 */,
 /* 1 */,
 /* 2 */
@@ -48410,12 +48410,19 @@ module.exports = function(module) {
 /* 592 */,
 /* 593 */,
 /* 594 */,
-/* 595 */
+/* 595 */,
+/* 596 */,
+/* 597 */,
+/* 598 */,
+/* 599 */,
+/* 600 */,
+/* 601 */,
+/* 602 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "pageDocsSearch", function() { return pageDocsSearch; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "lUuqa", function() { return lUuqa; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -48427,15 +48434,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from search.soy.
+// This file was automatically generated from index.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace pageDocsSearch.
+ * @fileoverview Templates in namespace lUuqa.
  * @public
  */
 
-goog.module('pageDocsSearch.incrementaldom');
+goog.module('lUuqa.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -48456,11 +48463,11 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias3 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricSearch.incrementaldom', 'render');
+var $templateAlias3 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
 
-var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('Sidebar.incrementaldom', 'render');
+var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('PieChart.incrementaldom', 'render');
 
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('main.incrementaldom', 'render');
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
 
 
 /**
@@ -48471,71 +48478,50 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param56 = function() {
-    $templateAlias2({section: opt_data.site.index}, null, opt_ijData);
-    ie_open('div', null, null,
-        'class', 'sidebar-offset');
-      ie_open('div', null, null,
-          'class', 'container-hybrid docs-home-top');
-        ie_open('div', null, null,
-            'class', 'row');
-          ie_open('div', null, null,
-              'class', 'col-xs-16');
-            ie_open('h1', null, null,
-                'class', 'docs-home-top-title');
-              ie_open('span');
-                itext('Electric');
-              ie_close('span');
-              itext(' Docs');
-            ie_close('h1');
-            ie_open('p', null, null,
-                'class', 'docs-home-top-description');
-              itext('Start learning how to leverage the power of ');
-              var dyn5 = opt_data.site.title;
-              if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
-              itext('.');
-            ie_close('p');
-          ie_close('div');
-        ie_close('div');
-        ie_open('div', null, null,
-            'class', 'row');
-          ie_open('div', null, null,
-              'class', 'container-hybrid');
-            $templateAlias3({action: '/search.html', path: '/', placeholder: 'Search Examples'}, null, opt_ijData);
-          ie_close('div');
-        ie_close('div');
-      ie_close('div');
-    ie_close('div');
+  var param471 = function() {
+    ie_open('h6');
+      var dyn25 = opt_data.page.description;
+      if (typeof dyn25 == 'function') dyn25(); else if (dyn25 != null) itext(dyn25);
+    ie_close('h6');
+    ie_open('article', null, null,
+        'id', '1');
+      ie_open('p');
+        $templateAlias2({columns: [{id: 'data1', data: [30]}, {id: 'data2', data: [70]}]}, null, opt_ijData);
+      ie_close('p');
+      $templateAlias3({code: '{call PieChart.render}\n    {param columns: [\n        [\n            \'id\': \'data1\',\n            \'data\': [30]\n        ],\n        [\n            \'id\': \'data2\',\n            \'data\': [70]\n        ]\n    ] /}\n{/call}', mode: 'soy'}, null, opt_ijData);
+      $templateAlias3({code: '<PieChart\n    columns={[\n        {\n            id: \'data1\',\n            data: [30]\n        },\n        {\n            id: \'data2\',\n            data: [70]\n        }\n    ]}\n/>', mode: 'jsx'}, null, opt_ijData);
+    ie_close('article');
+    ie_open('input', null, null,
+        'type', 'hidden',
+        'value', opt_data.page.title);
+    ie_close('input');
+    ie_open('input', null, null,
+        'type', 'hidden',
+        'value', opt_data.site.title);
+    ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({elementClasses: 'docs', content: param56}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param471}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'pageDocsSearch.render';
+  $render.soyTemplateName = 'lUuqa.render';
 }
 
-exports.render.params = ["site"];
-exports.render.types = {"site":"any"};
+exports.render.params = ["page","site"];
+exports.render.types = {"page":"any","site":"any"};
 templates = exports;
 return exports;
 
 });
 
-class pageDocsSearch extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(pageDocsSearch, templates);
+class lUuqa extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(lUuqa, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 596 */,
-/* 597 */,
-/* 598 */,
-/* 599 */,
-/* 600 */,
-/* 601 */,
-/* 602 */,
 /* 603 */,
 /* 604 */,
 /* 605 */,
@@ -48579,7 +48565,13 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(pageDocsSearch, templ
 /* 643 */,
 /* 644 */,
 /* 645 */,
-/* 646 */
+/* 646 */,
+/* 647 */,
+/* 648 */,
+/* 649 */,
+/* 650 */,
+/* 651 */,
+/* 652 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48611,9 +48603,9 @@ __webpack_require__(184);
 
 __webpack_require__(192);
 
-var _searchSoy = __webpack_require__(595);
+var _indexSoy = __webpack_require__(602);
 
-var _searchSoy2 = _interopRequireDefault(_searchSoy);
+var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -48623,23 +48615,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var pageDocsSearch = function (_Component) {
-  _inherits(pageDocsSearch, _Component);
+var lUuqa = function (_Component) {
+  _inherits(lUuqa, _Component);
 
-  function pageDocsSearch() {
-    _classCallCheck(this, pageDocsSearch);
+  function lUuqa() {
+    _classCallCheck(this, lUuqa);
 
-    return _possibleConstructorReturn(this, (pageDocsSearch.__proto__ || Object.getPrototypeOf(pageDocsSearch)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (lUuqa.__proto__ || Object.getPrototypeOf(lUuqa)).apply(this, arguments));
   }
 
-  return pageDocsSearch;
+  return lUuqa;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(pageDocsSearch, _searchSoy2.default);
+_metalSoy2.default.register(lUuqa, _indexSoy2.default);
 
-exports.default = pageDocsSearch;
+exports.default = lUuqa;
 
 /***/ })
-],[646]);
+],[652]);

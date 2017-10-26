@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([16,19,20],[
+webpackJsonppageComponent([13,20,21],[
 /* 0 */,
 /* 1 */,
 /* 2 */
@@ -48403,12 +48403,16 @@ module.exports = function(module) {
 /* 585 */,
 /* 586 */,
 /* 587 */,
-/* 588 */
+/* 588 */,
+/* 589 */,
+/* 590 */,
+/* 591 */,
+/* 592 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "tkmZM", function() { return tkmZM; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "jwMTn", function() { return jwMTn; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -48424,11 +48428,11 @@ goog.loadModule(function(exports) {
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace tkmZM.
+ * @fileoverview Templates in namespace jwMTn.
  * @public
  */
 
-goog.module('tkmZM.incrementaldom');
+goog.module('jwMTn.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -48449,9 +48453,7 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('Chart.incrementaldom', 'render');
-
-var $templateAlias3 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
+var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('TooltipFormat.incrementaldom', 'render');
 
 var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
 
@@ -48464,18 +48466,14 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param246 = function() {
-    ie_open('h6');
-      var dyn15 = opt_data.page.description;
-      if (typeof dyn15 == 'function') dyn15(); else if (dyn15 != null) itext(dyn15);
-    ie_close('h6');
+  var param294 = function() {
+    ie_open('h5');
+      var dyn17 = opt_data.page.description;
+      if (typeof dyn17 == 'function') dyn17(); else if (dyn17 != null) itext(dyn17);
+    ie_close('h5');
     ie_open('article', null, null,
         'id', '1');
-      ie_open('p');
-        $templateAlias2({columns: [{id: 'data1', data: [10, 90, 30, 120, 20, 160], color: 'hotpink'}, {id: 'data2', data: [200, 150, 120, 90, 10, 75], color: 'cadetblue'}]}, null, opt_ijData);
-      ie_close('p');
-      $templateAlias3({code: '{call Chart.render}\n    {param columns: [\n        [\n            \'id\': \'data1\',\n            \'data\': [10, 90, 30, 120, 20, 160],\n            \'color\': \'hotpink\'\n        ],\n        [\n            \'id\': \'data2\',\n            \'data\': [200, 150, 120, 90, 10, 75],\n            \'color\': \'cadetblue\'\n        ]\n    ] /}\n{/call}', mode: 'soy'}, null, opt_ijData);
-      $templateAlias3({code: '<Chart\n    columns={[\n        {\n            id: \'data1\',\n            data: [10, 90, 30, 120, 20, 160],\n            color: \'hotpink\'\n        },\n        {\n            id: \'data2\',\n            data: [200, 150, 120, 90, 10, 75],\n            color: \'cadetblue\'\n        }\n    ]}\n/>', mode: 'jsx'}, null, opt_ijData);
+      $templateAlias2(null, null, opt_ijData);
     ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
@@ -48486,11 +48484,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param246}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param294}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'tkmZM.render';
+  $render.soyTemplateName = 'jwMTn.render';
 }
 
 exports.render.params = ["page","site"];
@@ -48500,18 +48498,14 @@ return exports;
 
 });
 
-class tkmZM extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(tkmZM, templates);
+class jwMTn extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(jwMTn, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 589 */,
-/* 590 */,
-/* 591 */,
-/* 592 */,
 /* 593 */,
 /* 594 */,
 /* 595 */,
@@ -48558,7 +48552,11 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(tkmZM, templates);
 /* 636 */,
 /* 637 */,
 /* 638 */,
-/* 639 */
+/* 639 */,
+/* 640 */,
+/* 641 */,
+/* 642 */,
+/* 643 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48590,7 +48588,7 @@ __webpack_require__(184);
 
 __webpack_require__(192);
 
-var _indexSoy = __webpack_require__(588);
+var _indexSoy = __webpack_require__(592);
 
 var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
@@ -48602,23 +48600,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var tkmZM = function (_Component) {
-  _inherits(tkmZM, _Component);
+var jwMTn = function (_Component) {
+  _inherits(jwMTn, _Component);
 
-  function tkmZM() {
-    _classCallCheck(this, tkmZM);
+  function jwMTn() {
+    _classCallCheck(this, jwMTn);
 
-    return _possibleConstructorReturn(this, (tkmZM.__proto__ || Object.getPrototypeOf(tkmZM)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (jwMTn.__proto__ || Object.getPrototypeOf(jwMTn)).apply(this, arguments));
   }
 
-  return tkmZM;
+  return jwMTn;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(tkmZM, _indexSoy2.default);
+_metalSoy2.default.register(jwMTn, _indexSoy2.default);
 
-exports.default = tkmZM;
+exports.default = jwMTn;
 
 /***/ })
-],[639]);
+],[643]);

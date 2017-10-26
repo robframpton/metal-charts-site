@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([7,19,20],[
+webpackJsonppageComponent([18,20,21],[
 /* 0 */,
 /* 1 */,
 /* 2 */
@@ -48402,22 +48402,12 @@ module.exports = function(module) {
 /* 584 */,
 /* 585 */,
 /* 586 */,
-/* 587 */,
-/* 588 */,
-/* 589 */,
-/* 590 */,
-/* 591 */,
-/* 592 */,
-/* 593 */,
-/* 594 */,
-/* 595 */,
-/* 596 */,
-/* 597 */
+/* 587 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BqChy", function() { return BqChy; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HWLFq", function() { return HWLFq; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -48433,11 +48423,11 @@ goog.loadModule(function(exports) {
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace BqChy.
+ * @fileoverview Templates in namespace HWLFq.
  * @public
  */
 
-goog.module('BqChy.incrementaldom');
+goog.module('HWLFq.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -48458,7 +48448,7 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('DonutChart.incrementaldom', 'render');
+var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('Chart.incrementaldom', 'render');
 
 var $templateAlias3 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
 
@@ -48473,18 +48463,18 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param377 = function() {
+  var param221 = function() {
     ie_open('h6');
-      var dyn21 = opt_data.page.description;
-      if (typeof dyn21 == 'function') dyn21(); else if (dyn21 != null) itext(dyn21);
+      var dyn14 = opt_data.page.description;
+      if (typeof dyn14 == 'function') dyn14(); else if (dyn14 != null) itext(dyn14);
     ie_close('h6');
     ie_open('article', null, null,
         'id', '1');
       ie_open('p');
-        $templateAlias2({columns: [{id: 'data1', data: [30]}, {id: 'data2', data: [70]}]}, null, opt_ijData);
+        $templateAlias2({columns: [{id: 'data1', data: [10, 90, 30, 120, 20, 160], axis: 'y'}, {id: 'data2', data: [200, 150, 120, 90, 10, 75], axis: 'y2'}], axisY2: {max: 230, min: 10, show: true}}, null, opt_ijData);
       ie_close('p');
-      $templateAlias3({code: '{call DonutChart.render}\n    {param columns: [\n        [\n            \'id\': \'data1\',\n            \'data\': [30]\n        ],\n        [\n            \'id\': \'data2\',\n            \'data\': [70]\n        ]\n    ] /}\n{/call}', mode: 'soy'}, null, opt_ijData);
-      $templateAlias3({code: '<DonutChart\n    columns={[\n        {\n            id: \'data1\',\n            data: [30]\n        },\n        {\n            id: \'data2\',\n            data: [70]\n        }\n    ]}\n/>', mode: 'jsx'}, null, opt_ijData);
+      $templateAlias3({code: '{call Chart.render}\n    {param columns: [\n        [\n            \'id\': \'data1\',\n            \'data\': [10, 90, 30, 120, 20, 160],\n            \'axis\': \'y\'\n        ],\n        [\n            \'id\': \'data2\',\n            \'data\': [200, 150, 120, 90, 10, 75],\n            \'axis\': \'y2\'\n        ]\n    ] /}\n    {param axisY2: [\n        \'max\': 230,\n        \'min\': 10,\n        \'show\': true\n    ] /}\n{/call}', mode: 'soy'}, null, opt_ijData);
+      $templateAlias3({code: '<Chart\n    columns={[\n        {\n            id: \'data1\',\n            data: [10, 90, 30, 120, 20, 160],\n            axis: \'y\'\n        },\n        {\n            id: \'data2\',\n            data: [200, 150, 120, 90, 10, 75],\n            axis: \'y2\'\n        }\n    ]}\n    axisY2={\n        max: 230,\n        min: 10,\n        show: true\n    }\n/>', mode: 'jsx'}, null, opt_ijData);
     ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
@@ -48495,11 +48485,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param377}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param221}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'BqChy.render';
+  $render.soyTemplateName = 'HWLFq.render';
 }
 
 exports.render.params = ["page","site"];
@@ -48509,14 +48499,24 @@ return exports;
 
 });
 
-class BqChy extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(BqChy, templates);
+class HWLFq extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(HWLFq, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 588 */,
+/* 589 */,
+/* 590 */,
+/* 591 */,
+/* 592 */,
+/* 593 */,
+/* 594 */,
+/* 595 */,
+/* 596 */,
+/* 597 */,
 /* 598 */,
 /* 599 */,
 /* 600 */,
@@ -48558,15 +48558,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(BqChy, templates);
 /* 636 */,
 /* 637 */,
 /* 638 */,
-/* 639 */,
-/* 640 */,
-/* 641 */,
-/* 642 */,
-/* 643 */,
-/* 644 */,
-/* 645 */,
-/* 646 */,
-/* 647 */
+/* 639 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48598,7 +48590,7 @@ __webpack_require__(184);
 
 __webpack_require__(192);
 
-var _indexSoy = __webpack_require__(597);
+var _indexSoy = __webpack_require__(587);
 
 var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
@@ -48610,23 +48602,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var BqChy = function (_Component) {
-  _inherits(BqChy, _Component);
+var HWLFq = function (_Component) {
+  _inherits(HWLFq, _Component);
 
-  function BqChy() {
-    _classCallCheck(this, BqChy);
+  function HWLFq() {
+    _classCallCheck(this, HWLFq);
 
-    return _possibleConstructorReturn(this, (BqChy.__proto__ || Object.getPrototypeOf(BqChy)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (HWLFq.__proto__ || Object.getPrototypeOf(HWLFq)).apply(this, arguments));
   }
 
-  return BqChy;
+  return HWLFq;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(BqChy, _indexSoy2.default);
+_metalSoy2.default.register(HWLFq, _indexSoy2.default);
 
-exports.default = BqChy;
+exports.default = HWLFq;
 
 /***/ })
-],[647]);
+],[639]);

@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([0,19,20],[
+webpackJsonppageComponent([1,20,21],[
 /* 0 */,
 /* 1 */,
 /* 2 */
@@ -48424,7 +48424,7 @@ module.exports = function(module) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "zEvqv", function() { return zEvqv; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "APrDv", function() { return APrDv; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -48440,11 +48440,11 @@ goog.loadModule(function(exports) {
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace zEvqv.
+ * @fileoverview Templates in namespace APrDv.
  * @public
  */
 
-goog.module('zEvqv.incrementaldom');
+goog.module('APrDv.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -48467,7 +48467,7 @@ var iattr = IncrementalDom.attr;
 
 var $templateAlias3 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
 
-var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('StepChart.incrementaldom', 'render');
+var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('SplineChart.incrementaldom', 'render');
 
 var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
 
@@ -48480,7 +48480,7 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param492 = function() {
+  var param494 = function() {
     ie_open('h6');
       var dyn26 = opt_data.page.description;
       if (typeof dyn26 == 'function') dyn26(); else if (dyn26 != null) itext(dyn26);
@@ -48490,8 +48490,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       ie_open('p');
         $templateAlias2({columns: [{id: 'data1', data: [100, 20, 30]}, {id: 'data2', data: [20, 70, 100]}]}, null, opt_ijData);
       ie_close('p');
-      $templateAlias3({code: '{call StepChart.render}\n    {param columns: [\n        [\n            \'id\': \'data1\',\n            \'data\': [100, 20, 30]\n        ],\n        [\n            \'id\': \'data2\',\n            \'data\': [20, 70, 100]\n        ]\n    ] /}\n{/call}', mode: 'soy'}, null, opt_ijData);
-      $templateAlias3({code: '<StepChart\n    columns={[\n        {\n            id: \'data1\',\n            data: [100, 20, 30]\n        },\n        {\n            id: \'data2\',\n            data: [20, 70, 100]\n        }\n    ]}\n/>', mode: 'jsx'}, null, opt_ijData);
+      $templateAlias3({code: '{call SplineChart.render}\n    {param columns: [\n        [\n            \'id\': \'data1\',\n            \'data\': [100, 20, 30]\n        ],\n        [\n            \'id\': \'data2\',\n            \'data\': [20, 70, 100]\n        ]\n    ] /}\n{/call}', mode: 'soy'}, null, opt_ijData);
+      $templateAlias3({code: '<SplineChart\n    columns={[\n        {\n            id: \'data1\',\n            data: [100, 20, 30]\n        },\n        {\n            id: \'data2\',\n            data: [20, 70, 100]\n        }\n    ]}\n/>', mode: 'jsx'}, null, opt_ijData);
     ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
@@ -48502,11 +48502,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param492}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param494}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'zEvqv.render';
+  $render.soyTemplateName = 'APrDv.render';
 }
 
 exports.render.params = ["page","site"];
@@ -48516,8 +48516,8 @@ return exports;
 
 });
 
-class zEvqv extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(zEvqv, templates);
+class APrDv extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(APrDv, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
@@ -48573,7 +48573,8 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(zEvqv, templates);
 /* 651 */,
 /* 652 */,
 /* 653 */,
-/* 654 */
+/* 654 */,
+/* 655 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48617,23 +48618,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var zEvqv = function (_Component) {
-  _inherits(zEvqv, _Component);
+var APrDv = function (_Component) {
+  _inherits(APrDv, _Component);
 
-  function zEvqv() {
-    _classCallCheck(this, zEvqv);
+  function APrDv() {
+    _classCallCheck(this, APrDv);
 
-    return _possibleConstructorReturn(this, (zEvqv.__proto__ || Object.getPrototypeOf(zEvqv)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (APrDv.__proto__ || Object.getPrototypeOf(APrDv)).apply(this, arguments));
   }
 
-  return zEvqv;
+  return APrDv;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(zEvqv, _indexSoy2.default);
+_metalSoy2.default.register(APrDv, _indexSoy2.default);
 
-exports.default = zEvqv;
+exports.default = APrDv;
 
 /***/ })
-],[654]);
+],[655]);
