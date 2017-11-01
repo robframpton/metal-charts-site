@@ -10290,7 +10290,7 @@ var _metalState = __webpack_require__(5);
 
 var _metalCharts = __webpack_require__(101);
 
-var _TooltipFormat = __webpack_require__(196);
+var _TooltipFormat = __webpack_require__(195);
 
 var _TooltipFormat2 = _interopRequireDefault(_TooltipFormat);
 
@@ -10372,8 +10372,7 @@ exports.default = TooltipFormat;
 /* 192 */,
 /* 193 */,
 /* 194 */,
-/* 195 */,
-/* 196 */
+/* 195 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -10465,6 +10464,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(TooltipFormat, templa
 
 
 /***/ }),
+/* 196 */,
 /* 197 */
 /***/ (function(module, exports, __webpack_require__) {
 
